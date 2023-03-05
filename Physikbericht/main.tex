@@ -1,0 +1,74 @@
+\documentclass{article} 
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[german]{babel}
+\usepackage{xcolor}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+
+\usepackage{amsfonts} 
+% or 
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{amsfonts}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage[linewidth=1pt]{mdframed}
+\usepackage{lipsum}
+\usepackage{subfiles} % Best loaded last in the preamble
+\usepackage[backend=biber]{biblatex}
+
+\addbibresource{PE_Lab.bib}
+
+\title{Semesterprojekt Physik Engines}
+
+\author{Kim Lan Vu, Michel Steiner, Asha Schwegler}
+
+
+
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section {Zusammenfassung}
+\subfile{subfiles/Zusammenfassung}
+
+\section {Aufbau des Experiments}
+\subfile{subfiles/Aufbau des Experiments}
+
+\section {Physikalische Beschreibung der einzelnen Vorgänge}
+\subfile{subfiles/PhysikalischeBeschreibung}
+
+\section {Beschreibung der Implentierung inklusive Screenshots aus Unity}
+\subfile{subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity}
+
+\section {Rückblick und Lehren aus dem Versuch}
+\subfile{subfiles/Rueckblick und Lehren aus dem Versuch}
+
+\section {Resultate mit grafischer Darstellung}
+\subfile{subfiles/Resultate mit grafischer Darstellung}
+
+
+\section {Anhang}
+\subfile{subfiles/Anhang}
+
+
+
+\printbibliography
+\end{document}
