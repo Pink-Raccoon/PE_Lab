@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>main.bcf</file>
+      <file>Anhang.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>main.bbl</file>
+      <file>Anhang.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -64,19 +64,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>main</infile>
+      <infile>Anhang</infile>
     </cmdline>
     <input>
-      <file>main.bcf</file>
+      <file>Anhang.bcf</file>
     </input>
     <output>
-      <file>main.bbl</file>
+      <file>Anhang.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>main.bbl</file>
+      <file>Anhang.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>main.bcf</file>
+      <file>Anhang.bcf</file>
     </requires>
     <requires type="editable">
       <file>PE_Lab.bib</file>

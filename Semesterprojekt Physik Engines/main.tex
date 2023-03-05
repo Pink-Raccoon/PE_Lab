@@ -3,18 +3,12 @@
 % Language setting
 % Replace `english' with e.g. `spanish' to change the document language
 \usepackage[german]{babel}
-
 \usepackage{xcolor}
-
 % Set page size and margins
 % Replace `letterpaper' with `a4paper' for UK/EU standard size
-\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
-
-% Useful packages
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}% Useful packages
 \usepackage{amsmath}
-
 \usepackage{amsfonts} 
-% or 
 \usepackage{amssymb}
 \usepackage{mathtools}
 \usepackage{graphicx}
@@ -25,17 +19,17 @@
 \usepackage{amsfonts}
 \usepackage[utf8]{inputenc}
 \usepackage{pgfplots}
-
 \usepackage{listings}
 \usepackage[linewidth=1pt]{mdframed}
 \usepackage{lipsum}
 \usepackage{subfiles} % Best loaded last in the preamble
 \usepackage[backend=biber]{biblatex}
 \usepackage{csquotes}
+
 \addbibresource{PE_Lab.bib}
 \pgfplotsset{compat=1.18}
-\title{Semesterprojekt Physik Engines}
 
+\title{Semesterprojekt Physik Engines}
 \author{Kim Lan Vu, Michel Steiner, Asha Schwegler}
 
 
@@ -45,7 +39,11 @@
 
 \maketitle
 \newpage
+
 \tableofcontents
+
+
+
 \newpage
 
 \section {Zusammenfassung}
@@ -66,10 +64,14 @@
 \section {Resultate mit grafischer Darstellung}
 \subfile{subfiles/Resultate mit grafischer Darstellung}
 
+\appendix
 \section {Anhang}
 \subfile{subfiles/Anhang}
 
 \newpage
 
 \printbibliography
+
+
+
 \end{document}

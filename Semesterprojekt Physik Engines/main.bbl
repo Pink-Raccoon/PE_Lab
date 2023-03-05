@@ -1,0 +1,61 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{brendowLibGuidesZoteroZotero}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1d5e263609d4d51caf0ccba0113a5739}{%
+           family={Brendow},
+           familyi={B\bibinitperiod},
+           given={Catherine},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d5e263609d4d51caf0ccba0113a5739}
+      \strng{fullhash}{1d5e263609d4d51caf0ccba0113a5739}
+      \strng{bibnamehash}{1d5e263609d4d51caf0ccba0113a5739}
+      \strng{authorbibnamehash}{1d5e263609d4d51caf0ccba0113a5739}
+      \strng{authornamehash}{1d5e263609d4d51caf0ccba0113a5739}
+      \strng{authorfullhash}{1d5e263609d4d51caf0ccba0113a5739}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{LibGuides: Zotero: Zotero and LaTeX}
+      \field{langid}{english}
+      \field{shorttitle}{{{LibGuides}}}
+      \field{title}{{{LibGuides}}: {{Zotero}}: {{Zotero}} and {{LaTeX}}}
+      \field{urlday}{5}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C\:\\Users\\Asha\\Zotero\\storage\\CPPEUCKM\\LaTex.html
+      \endverb
+      \verb{urlraw}
+      \verb https://libguides.graduateinstitute.ch/zotero/LaTex
+      \endverb
+      \verb{url}
+      \verb https://libguides.graduateinstitute.ch/zotero/LaTex
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
