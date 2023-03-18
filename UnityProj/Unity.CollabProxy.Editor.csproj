@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{93522DC2-8790-4EB1-05CE-BCDFBC933EB6}</ProjectGuid>
+    <ProjectGuid>{8E719C5E-2A2F-40B6-4149-EEB1EDBE418F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.CollabProxy.Editor</AssemblyName>
@@ -855,27 +855,27 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{0AB3C519-0AD2-DB81-6E74-457B47DBC1BE}</Project>
+      <Project>{BEEC2AA3-A7B5-3C11-09D3-4354912FF529}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Editor.csproj">
-      <Project>{E4E8F443-A37E-6E31-0A62-FF592B4B1E78}</Project>
+      <Project>{147F8015-EC22-D9B0-9403-506FB1CF7D7A}</Project>
       <Name>Unity.Services.Core.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{BCA22025-E5B7-EDFE-C196-BE6B0530BDA8}</Project>
+      <Project>{CF8E457E-A122-A3C7-4C3F-6C00AEA4A55C}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{FB9F4611-0048-0203-7B18-13EFF9B8F8E1}</Project>
+      <Project>{F1B43AAD-E24E-C405-A48D-7FBE2667F055}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{9AA6DB59-F81E-1322-FD01-2307E49B7DD6}</Project>
+      <Project>{204F7674-D98B-9EF3-FA40-10DE4B9FCE59}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{A5EE18DB-0232-2ECF-3E68-09467CC85C6E}</Project>
+      <Project>{AA35C3C3-BD7A-681E-8042-04D13CCEB786}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

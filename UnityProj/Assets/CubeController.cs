@@ -16,7 +16,8 @@ public class CubeController : MonoBehaviour
 {
     private Rigidbody rigidBody;
 
-    public int springConstant; // N/m
+    //public int constantForce; // N/m
+    public int speed;
 
     private float currentTimeStep; // s
     
@@ -39,17 +40,13 @@ public class CubeController : MonoBehaviour
     void FixedUpdate() 
     {
         float forceX; // N
-        float forceZ;
-
+        // 
+        
         // Calculate spring force on body for x component of force vector
-        forceX = -rigidBody.position.x * springConstant;
-        rigidBody.AddForce(new Vector3(forceX,0f, 0f));
-        //forceZ = -rigidBody.position.z * springConstant;
-        //rigidBody.AddForce(new Vector3(0f, 0f,forceZ));
-        currentTimeStep += Time.deltaTime;
+        //forceX = -rigidBody.position.x * constantForce;
+        //rigidBody.AddForce(new Vector3(forceX,0f, 0f));
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
-        timeSeries.Add(new List<float>() { currentTimeStep, rigidBody.position.x, rigidBody.velocity.x, forceX });
-       // timeSeries.Add(new List<float>() {currentTimeStep, rigidBody.position.z, rigidBody.velocity.z, forceZ });
     }
     void WriteTimeSeriesToCSV() 
     {
