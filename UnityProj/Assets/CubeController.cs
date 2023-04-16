@@ -42,14 +42,14 @@ public class CubeController : MonoBehaviour
         spring = GameObject.Find("spring").GetComponent<Rigidbody>();
         cubeJulia = GameObject.Find("Julia").GetComponent<Rigidbody>();
 
-        timeSeries = new List<List<float>>(); 
+        timeSeries = new List<List<float>>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+       
     }
     // FixedUpdate can be called multiple times per frame
     void FixedUpdate()
@@ -65,27 +65,24 @@ public class CubeController : MonoBehaviour
 
         // Move cube towards spring
         float springPosition = spring.transform.position.x;
-        if (cubeRomeo.velocity.x < 2)
+        if (cubeRomeo.velocity.x <= 2)
         {
-            cubeRomeo.AddForce(new Vector3(constantForce,0f,0f));
-            Vector3 rightMovement = transform.right * 2 * Time.fixedDeltaTime;
-            cubeRomeo.MovePosition(cubeRomeo.position + rightMovement);
+            
+            cubeRomeo.AddForce(new Vector3(constantForce, 0f, 0f));
+
+            cubeRomeo.MovePosition(cubeRomeo.position);
 
         }
 
-        if (cubeRomeo.velocity.x == 2 && !hasElasticImpulse)
-        {
-            currentTimeStep += Time.deltaTime;
 
-            timeSeries.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeKineticEnergy });
-        }
-        if ( cubeRomeo.position.x >= springPosition)
+        if (cubeRomeo.position.x >= springPosition - springLength)
         {
+
             hasElasticImpulse = true;
-           
-            springPotentialEnergy = (float)(0.5 * springConstant * Math.Pow(cubeRomeo.position.x-springLength, 2.0)); // 1/2k * x^2
-            cubeRomeKineticEnergy = ((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))); // 1/2*m*v^2
-            springForceX = (springPotentialEnergy + cubeRomeKineticEnergy) / springLength;//-k * x
+
+            springPotentialEnergy = (float)(0.5 * springConstant * Math.Pow(springLength, 2.0)); // 1/2k * x^2
+            cubeRomeKineticEnergy = ((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))) ; // 1/2*m*v^2
+            springForceX = (springPotentialEnergy + cubeRomeKineticEnergy) / -springLength;//-k * x
 
             //cubeRomeo.AddForce(new Vector3(cubeRomeKineticEnergy, 0f, 0f));
             cubeRomeo.AddForce(new Vector3(springForceX, 0f, 0f));
@@ -98,16 +95,18 @@ public class CubeController : MonoBehaviour
             cubeRomeoImpulse = cubeRomeo.mass * cubeRomeo.velocity.x;
             cubeJuliaImpulse = cubeJulia.mass * cubeJulia.velocity.x;
             hasElasticImpulse = false;
-            cubeRomeo.AddForce(new Vector3(cubeRomeoImpulse,0,0));
-            cubeJulia.AddForce(new Vector3(cubeJuliaImpulse,0,0));
-            
+            cubeRomeo.AddForce(new Vector3(cubeRomeoImpulse, 0, 0));
+            cubeJulia.AddForce(new Vector3(cubeJuliaImpulse, 0, 0));
+
         }
 
         currentTimeStep += Time.deltaTime;
         currentTimeStep += Time.deltaTime;
 
 
-        timeSeries.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoImpulse,cubeJuliaTimeStep, cubeJulia.position.x, cubeJulia.velocity.x, cubeJuliaImpulse }); } void OnApplicationQuit()
+        timeSeries.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoImpulse, cubeJuliaTimeStep, cubeJulia.position.x, cubeJulia.velocity.x, cubeJuliaImpulse });
+    }
+    void OnApplicationQuit()
     {
         WriteTimeSeriesToCSV();
     }
@@ -123,5 +122,25 @@ public class CubeController : MonoBehaviour
                 streamWriter.Flush();
             }
         }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.rigidbody != cubeJulia) return;
+
+
+
+        FixedJoint joint = gameObject.AddComponent<FixedJoint>();
+
+
+
+        //Set the anchor point where the wand and blade collide
+        ContactPoint contact = collision.contacts[0];
+        joint.anchor = transform.InverseTransformPoint(contact.point);
+        joint.connectedBody = collision.contacts[0].otherCollider.transform.GetComponent<Rigidbody>();
+
+
+
+        // Stops objects from continuing to collide and creating more joints
+        joint.enableCollision = false;
     }
 }
