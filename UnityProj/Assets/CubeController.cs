@@ -82,7 +82,7 @@ public class CubeController : MonoBehaviour
 
             springPotentialEnergy = (float)(0.5 * springConstant * Math.Pow(springLength, 2.0)); // 1/2k * x^2
             cubeRomeKineticEnergy = ((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))) ; // 1/2*m*v^2
-            springForceX = (springPotentialEnergy + cubeRomeKineticEnergy) / -springLength;//-k * x
+            springForceX = (springPotentialEnergy + cubeRomeKineticEnergy) / -springLength;
 
             //cubeRomeo.AddForce(new Vector3(cubeRomeKineticEnergy, 0f, 0f));
             cubeRomeo.AddForce(new Vector3(springForceX, 0f, 0f));
