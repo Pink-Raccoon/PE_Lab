@@ -17,6 +17,9 @@ public class CubeController : MonoBehaviour
     private List<List<float>> timeSeriessInelasticCollision;
 
 
+    
+    private string filePath;
+    private byte[] fileData;
     float springPotentialEnergy = 0f;
     float cubeRomeoKinetic = 0f;
     float cubeRomeoImpulse = 0f;
@@ -78,6 +81,12 @@ public class CubeController : MonoBehaviour
         {
             float springForceX = (collisionPosition - springMaxDeviation) * -springConstant;
             cubeRomeo.AddForce(new Vector3(springForceX, 0f, 0f));
+
+            filePath = "Assets/Images/snoopy-flower-cynthia-t-thomas.jpg";                   // the path of the image
+            fileData = File.ReadAllBytes(filePath);              // 1.read the bytes array
+            Texture2D tex = new Texture2D(2, 2);                 // 2.create a texture named tex
+            tex.LoadImage(fileData);                             // 3.load inside tx the bytes and use the correct image size
+            GetComponent<Renderer>().material.mainTexture = tex; // 4.apply tex to material.mainTexture 
             currentTimeStep += Time.deltaTime;
             timeSeriesElasticCollision.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoKinetic, springPotentialEnergy, cubeRomeoKinetic, springForceX });
         }
@@ -97,9 +106,10 @@ public class CubeController : MonoBehaviour
     }
     void OnApplicationQuit()
     {
-        //WriteTimeSeriesToCSV();
+        WriteElasticTimeSeriesToCsv();
+        WriteInelasticTimeSeriesToCsv();
     }
-    void WriteTimeSeriesToCSV()
+    void WriteElasticTimeSeriesToCsv()
     {
         using (var streamWriter = new StreamWriter("time_seriesElastic.csv"))
         {
@@ -122,6 +132,21 @@ public class CubeController : MonoBehaviour
             }
         }
     }
+
+    void WriteInelasticTimeSeriesToCsv()
+    {
+        using (var streamWriter = new StreamWriter("time_seriesInelastic.csv"))
+        {
+            streamWriter.WriteLine(" cubeJuliaTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoImpulse, cubeRomeoKinetic, cubeJulia.position.x, cubeJulia.velocity.x, cubeJuliaImpulse, velocityEnd, cubeKineticEnd, forceOnJulia");
+
+            foreach (List<float> timeStep in timeSeriessInelasticCollision)
+            {
+                streamWriter.WriteLine(string.Join(",", timeStep));
+                streamWriter.Flush();
+            }
+        }
+    }
+
     void OnCollisionEnter(Collision collision)
     {
         if (collision.rigidbody != cubeJulia)
