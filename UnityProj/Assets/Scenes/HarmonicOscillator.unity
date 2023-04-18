@@ -407,6 +407,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29398db7146ca504899caa76c3450e9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cubeRomeo: {fileID: 0}
+  cubeJulia: {fileID: 0}
+  spring: {fileID: 0}
   springConstant: 2
   constantForce: 5
   springLength: 2
@@ -815,7 +818,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29398db7146ca504899caa76c3450e9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  springConstant: 35
+  cubeRomeo: {fileID: 0}
+  cubeJulia: {fileID: 0}
+  spring: {fileID: 0}
+  springConstant: 8
   constantForce: 4
   springLength: 2
 --- !u!1 &1613095875
@@ -950,6 +956,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29398db7146ca504899caa76c3450e9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cubeRomeo: {fileID: 0}
+  cubeJulia: {fileID: 0}
+  spring: {fileID: 0}
   springConstant: 2
   constantForce: 5
   springLength: 2
