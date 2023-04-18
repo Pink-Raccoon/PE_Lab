@@ -1,146 +1,171 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using UnityEngine.WSA;
 using UnityEngine;
-
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-using System.IO;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography;
-using UnityEngine.UIElements;
 
 
 public class CubeController : MonoBehaviour
 {
-    private Rigidbody cubeRomeo;
-    private Rigidbody cubeJulia;
-    private Rigidbody spring;
-
-    public float springConstant; // N/m
-    public float constantForce;
-    public int springLength; // m
+    public Rigidbody cubeRomeo;
+    public Rigidbody cubeJulia;
+    public GameObject spring;
 
     private float currentTimeStep; // s
     private float cubeJuliaTimeStep;
 
+    private List<List<float>> timeSeriesElasticCollision;
+    private List<List<float>> timeSeriessInelasticCollision;
 
 
-    private List<List<float>> timeSeries;
+    
+    private string filePath;
+    private byte[] fileData;
+    float springPotentialEnergy = 0f;
+    float cubeRomeoKinetic = 0f;
+    float cubeRomeoImpulse = 0f;
+    float cubeJuliaImpulse = 0f;
+    float forceOnJulia = 0f;
+    float velocityEnd = 0f;
+    float cubeKineticEnd = 0f;
+    float constantForce = 4f;
+    //float velocity = 2f;
+    double startime = 0;
+    private double accelarationTime = 1.0;
+    float springConstant = 0f;
+    float springMaxDeviation = 0f;
+    float accelaration = 0f;
+    
 
-    private bool hasSpeed;
-    private bool hasElasticImpulse;
-
+    float springContraction = 1.5f;
     // Start is called before the first frame update
     void Start()
     {
-        cubeRomeo = GameObject.Find("Romeo").GetComponent<Rigidbody>();
-        spring = GameObject.Find("spring").GetComponent<Rigidbody>();
-        cubeJulia = GameObject.Find("Julia").GetComponent<Rigidbody>();
+        startime = Time.fixedTimeAsDouble;
 
-        timeSeries = new List<List<float>>();
+
+
+        timeSeriesElasticCollision = new List<List<float>>();
+        timeSeriessInelasticCollision = new List<List<float>>();
+
+        springMaxDeviation = spring.transform.position.x - spring.transform.localScale.y / 2; //Maximale Auslenkung gerechnet anhand der linken seite des Feders
+
+        springConstant = (float)((cubeRomeo.mass * Math.Pow(2.0, 2)) / (Math.Pow(springContraction, 2.0))); // Energieerhaltungsgesetz kinEnergie = PotEnergie : 1/2*m*v^2 = 1/2k * x^2
 
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+
     }
     // FixedUpdate can be called multiple times per frame
     void FixedUpdate()
     {
-        float springForceX = 0; // N
-        float springPotentialEnergy = 0f;
-        float cubeRomeKineticEnergy = 0f;
-        float cubeRomeoImpulse = 0f;
-        float cubeJuliaImpulse = 0f;
-
-
-
-
-        // Move cube towards spring
-        float springPosition = spring.transform.position.x;
-        if (cubeRomeo.velocity.x <= 2)
+        double currentTime = Time.fixedTimeAsDouble-startime;
+        if (accelarationTime >= currentTime)
         {
-            
+            //accelaration = velocity / time; 
+            constantForce = 4f;
             cubeRomeo.AddForce(new Vector3(constantForce, 0f, 0f));
-
-            cubeRomeo.MovePosition(cubeRomeo.position);
-
         }
 
 
-        if (cubeRomeo.position.x >= springPosition - springLength)
+        cubeRomeoKinetic = ((float)(0.5 * cubeRomeo.mass * Math.Pow(2, 2.0))); // 1/2*m*v^2
+        
+
+
+
+        float collisionPosition = cubeRomeo.transform.position.x + cubeRomeo.transform.localScale.x / 2;
+
+        if (collisionPosition >= springMaxDeviation)
         {
-
-            hasElasticImpulse = true;
-
-            springPotentialEnergy = (float)(0.5 * springConstant * Math.Pow(springLength, 2.0)); // 1/2k * x^2
-            cubeRomeKineticEnergy = ((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))) ; // 1/2*m*v^2
-            springForceX = (springPotentialEnergy + cubeRomeKineticEnergy) / -springLength;
-
-            //cubeRomeo.AddForce(new Vector3(cubeRomeKineticEnergy, 0f, 0f));
+            float springForceX = (collisionPosition - springMaxDeviation) * -springConstant;
             cubeRomeo.AddForce(new Vector3(springForceX, 0f, 0f));
 
+            filePath = "Assets/Images/snoopy-flower-cynthia-t-thomas.jpg";                   // the path of the image
+            fileData = File.ReadAllBytes(filePath);              // 1.read the bytes array
+            Texture2D tex = new Texture2D(2, 2);                 // 2.create a texture named tex
+            tex.LoadImage(fileData);                             // 3.load inside tx the bytes and use the correct image size
+            GetComponent<Renderer>().material.mainTexture = tex; // 4.apply tex to material.mainTexture 
             currentTimeStep += Time.deltaTime;
-            timeSeries.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x });
-        }
-        else
-        {
-            cubeRomeoImpulse = cubeRomeo.mass * cubeRomeo.velocity.x;
-            cubeJuliaImpulse = cubeJulia.mass * cubeJulia.velocity.x;
-            hasElasticImpulse = false;
-            cubeRomeo.AddForce(new Vector3(cubeRomeoImpulse, 0, 0));
-            cubeJulia.AddForce(new Vector3(cubeJuliaImpulse, 0, 0));
-
+            timeSeriesElasticCollision.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoKinetic, springPotentialEnergy, cubeRomeoKinetic, springForceX });
         }
 
-        currentTimeStep += Time.deltaTime;
-        currentTimeStep += Time.deltaTime;
 
 
-        timeSeries.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoImpulse, cubeJuliaTimeStep, cubeJulia.position.x, cubeJulia.velocity.x, cubeJuliaImpulse });
+        cubeRomeoKinetic = ((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))); // 1/2*m*v^2
+        cubeRomeoImpulse = cubeRomeo.mass * cubeRomeo.velocity.x;
+        cubeJuliaImpulse = cubeJulia.mass * cubeJulia.velocity.x;
+        velocityEnd = (cubeRomeoImpulse + cubeJuliaImpulse) / (cubeRomeo.mass + cubeJulia.mass);
+        cubeKineticEnd = (float)(0.5 * (cubeRomeo.mass + cubeJulia.mass) * Math.Pow(velocityEnd, 2.0));
+        forceOnJulia = cubeJulia.mass * velocityEnd - cubeJulia.velocity.x;
+
+
+        cubeJuliaTimeStep += Time.deltaTime;
+       timeSeriessInelasticCollision.Add(new List<float>() { cubeJuliaTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoImpulse, cubeRomeoKinetic, cubeJulia.position.x, cubeJulia.velocity.x, cubeJuliaImpulse, velocityEnd, cubeKineticEnd, forceOnJulia });
     }
     void OnApplicationQuit()
     {
-        WriteTimeSeriesToCSV();
+        WriteElasticTimeSeriesToCsv();
+        WriteInelasticTimeSeriesToCsv();
     }
-    void WriteTimeSeriesToCSV()
+    void WriteElasticTimeSeriesToCsv()
     {
-        using (var streamWriter = new StreamWriter("time_series.csv"))
+        using (var streamWriter = new StreamWriter("time_seriesElastic.csv"))
         {
-            streamWriter.WriteLine("currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeJuliaTimeStep, cubeJulia.position.x, cubeJulia.velocity.x ");
+            streamWriter.WriteLine("currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoKinetic, springPotentialEnergy, cubeRomeoKinetic, springForceX ");
 
-            foreach (List<float> timeStep in timeSeries)
+            foreach (List<float> timeStep in timeSeriesElasticCollision)
+            {
+                streamWriter.WriteLine(string.Join(",", timeStep));
+                streamWriter.Flush();
+            }
+        }
+        using (var streamWriter = new StreamWriter("time_seriesInelastic.csv"))
+        {
+            streamWriter.WriteLine(" cubeJuliaTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoImpulse, cubeRomeoKinetic, cubeJulia.position.x, cubeJulia.velocity.x, cubeJuliaImpulse, velocityEnd, cubeKineticEnd, forceOnJulia");
+
+            foreach (List<float> timeStep in timeSeriessInelasticCollision)
             {
                 streamWriter.WriteLine(string.Join(",", timeStep));
                 streamWriter.Flush();
             }
         }
     }
-    private void OnCollisionEnter(Collision collision)
+
+    void WriteInelasticTimeSeriesToCsv()
     {
-        if (collision.rigidbody != cubeJulia) return;
+        using (var streamWriter = new StreamWriter("time_seriesInelastic.csv"))
+        {
+            streamWriter.WriteLine(" cubeJuliaTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoImpulse, cubeRomeoKinetic, cubeJulia.position.x, cubeJulia.velocity.x, cubeJuliaImpulse, velocityEnd, cubeKineticEnd, forceOnJulia");
 
-
-
-        FixedJoint joint = gameObject.AddComponent<FixedJoint>();
-
-
-
-        //Set the anchor point where the wand and blade collide
-        ContactPoint contact = collision.contacts[0];
-        joint.anchor = transform.InverseTransformPoint(contact.point);
-        joint.connectedBody = collision.contacts[0].otherCollider.transform.GetComponent<Rigidbody>();
-
-
-
-        // Stops objects from continuing to collide and creating more joints
-        joint.enableCollision = false;
+            foreach (List<float> timeStep in timeSeriessInelasticCollision)
+            {
+                streamWriter.WriteLine(string.Join(",", timeStep));
+                streamWriter.Flush();
+            }
+        }
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.rigidbody != cubeJulia)
+        {
+            return;
+        }
+        if (collision.rigidbody == cubeJulia)
+        {
+            FixedJoint joint = gameObject.AddComponent<FixedJoint>();
+            ContactPoint[] contacts = new ContactPoint[collision.contactCount];
+            collision.GetContacts(contacts);
+            ContactPoint contact = contacts[0];
+            joint.anchor = transform.InverseTransformPoint(contact.point);
+            joint.connectedBody = collision.contacts[0].otherCollider.transform.GetComponent<Rigidbody>();
+
+
+            // Stops objects from continuing to collide and creating more joints
+            joint.enableCollision = false;
+        }
+    }
+
 }
