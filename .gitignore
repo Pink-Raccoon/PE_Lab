@@ -20,7 +20,7 @@
 [Aa]ssets/Plugins/Editor/JetBrains*
 
 # Visual Studio cache directory
-.vs/
+UnityProj/.vs/
 
 # Gradle cache directory
 .gradle/
@@ -54,7 +54,3 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-
-# Crashlytics generated file
-crashlytics-build.properties
-
