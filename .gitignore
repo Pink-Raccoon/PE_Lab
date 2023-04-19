@@ -54,3 +54,22 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+## Core latex/pdflatex auxiliary files:
+Semesterprojekt Physik Engines/subfiles/*.aux
+Semesterprojekt Physik Engines/subfiles/*.log
+Semesterprojekt Physik Engines/subfiles/*.fls
+Semesterprojekt Physik Engines/subfiles/*.out
+
+## Intermediate documents:
+Semesterprojekt Physik Engines/subfiles/*.pdf
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+Semesterprojekt Physik Engines/subfiles/*.bbl
+Semesterprojekt Physik Engines/subfiles/*.bcf
+Semesterprojekt Physik Engines/subfiles/*.blg
+Semesterprojekt Physik Engines/subfiles/*.run.xml
+
+## Build tool auxiliary files:
+Semesterprojekt Physik Engines/subfiles/*.fdb_latexmk
+Semesterprojekt Physik Engines/subfiles/*.synctex.gz
