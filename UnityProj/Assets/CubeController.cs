@@ -74,8 +74,8 @@ public class CubeController : MonoBehaviour
 
         cubeRomeoKinetic = Math.Abs((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))); // 1/2*m*v^2
         springPotentialEnergy = Math.Abs((float)(0.5 * springConstant * Math.Pow(springContraction,2.0)));
-        currentTimeStep += Time.deltaTime;
-        timeSeriesElasticCollision.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoKinetic, springPotentialEnergy, cubeRomeoKinetic});
+        //currentTimeStep += Time.deltaTime;
+        //timeSeriesElasticCollision.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoKinetic, springPotentialEnergy, cubeRomeoKinetic});
 
 
 
