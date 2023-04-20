@@ -1,0 +1,78 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Apr 20 21:06:43 2023
+
+@author: Asha
+"""
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+df = pd.read_csv("D:/ZHAW_Code/PE_Lab/UnityProj/TimeSeries/time_seriesInelastic.csv")
+
+# plt.plot(df["cubeJuliaTimeStep"], df[" cubeJulia.position.x"])
+# plt.ylabel("s")
+# plt.xlabel("t")
+# plt.xlim(15,23)
+# plt.title("Ort als Funktion der Zeit")
+# plt.show()
+
+
+# plt.plot(df["cubeJuliaTimeStep"], df[" cubeRomeo.velocity.x"])
+# plt.ylabel("v")
+# plt.xlabel("t")
+# plt.title("Geschwindigkeit als Funktion der Zeit")
+# plt.xlim(15,23)
+# #plt.legend()
+# plt.show()
+
+# plt.plot(df["cubeJuliaTimeStep"], df[" cubeJulia.velocity.x"])
+# plt.ylabel("v")
+# plt.xlabel("t")
+# plt.title("Geschwindigkeit als Funktion der Zeit")
+# plt.xlim(15,23)
+# #plt.legend()
+# plt.show()
+
+# plt.plot(df["cubeJuliaTimeStep"], df[" cubeRomeoKinetic"])
+# plt.ylabel("J")
+# plt.xlabel("t")
+# plt.xlim(15,23)
+# plt.title("Energie als Funktion der Zeit")
+# plt.show()
+
+# plt.plot(df["cubeJuliaTimeStep"], df[" cubeJuliaImpulse"])
+# plt.ylabel("Ns")
+# plt.xlabel("t")
+# plt.xlim(15,23)
+# plt.title("Impuls als Funktion der Zeit")
+# plt.show()
+
+# plt.plot(df["cubeJuliaTimeStep"], df[" cubeRomeoImpulse"])
+# plt.ylabel("Ns")
+# plt.xlabel("t")
+# plt.title("Impuls als Funktion der Zeit")
+# plt.xlim(15,23)
+# plt.show()
+
+
+# plt.plot(df["cubeJuliaTimeStep"], df[" velocityEnd"])
+# plt.ylabel("s")
+# plt.xlabel("t")
+# plt.title("Endgeschwindigkeit als Funktion der Zeit")
+# plt.xlim(15,23)
+# plt.show()
+
+# plt.plot(df["cubeJuliaTimeStep"], df[" cubeKineticEnd"])
+# plt.ylabel("J")
+# plt.xlabel("t")
+# plt.title("Endkinetik als Funktion der Zeit")
+# plt.xlim(15,23)
+# plt.show()
+
+# plt.plot(df["cubeJuliaTimeStep"], df[" forceOnJulia "])
+# plt.ylabel("N")
+# plt.xlabel("t")
+# plt.title("Kraft auf Körper als Funktion der Zeit")
+# plt.xlim(15,23)
+# plt.show()

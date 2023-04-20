@@ -28,7 +28,7 @@ public class CubeController : MonoBehaviour
     float velocityEnd = 0f;
     float cubeKineticEnd = 0f;
     float constantForce = 4f;
-    //float velocity = 2f;
+    float velocity = 2f;
     double startime = 0;
     private double accelarationTime = 1.0;
     float springConstant = 0f;
@@ -48,8 +48,9 @@ public class CubeController : MonoBehaviour
         timeSeriessInelasticCollision = new List<List<float>>();
 
         springMaxDeviation = spring.transform.position.x - spring.transform.localScale.y / 2; //Maximale Auslenkung gerechnet anhand der linken seite des Feders
-
+        
         springConstant = (float)((cubeRomeo.mass * Math.Pow(2.0, 2)) / (Math.Pow(springContraction, 2.0))); // Energieerhaltungsgesetz kinEnergie = PotEnergie : 1/2*m*v^2 = 1/2k * x^2
+        
 
     }
 
@@ -62,6 +63,7 @@ public class CubeController : MonoBehaviour
     void FixedUpdate()
     {
         double currentTime = Time.fixedTimeAsDouble-startime;
+        
         if (accelarationTime >= currentTime)
         {
             //accelaration = velocity / time; 
@@ -70,8 +72,11 @@ public class CubeController : MonoBehaviour
         }
 
 
-        cubeRomeoKinetic = ((float)(0.5 * cubeRomeo.mass * Math.Pow(2, 2.0))); // 1/2*m*v^2
-        
+        cubeRomeoKinetic = Math.Abs((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))); // 1/2*m*v^2
+        springPotentialEnergy = Math.Abs((float)(0.5 * springConstant * Math.Pow(springContraction,2.0)));
+        currentTimeStep += Time.deltaTime;
+        timeSeriesElasticCollision.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoKinetic, springPotentialEnergy, cubeRomeoKinetic});
+
 
 
 
@@ -93,16 +98,16 @@ public class CubeController : MonoBehaviour
 
 
 
-        cubeRomeoKinetic = ((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))); // 1/2*m*v^2
-        cubeRomeoImpulse = cubeRomeo.mass * cubeRomeo.velocity.x;
-        cubeJuliaImpulse = cubeJulia.mass * cubeJulia.velocity.x;
+        cubeRomeoKinetic = Math.Abs((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))); // 1/2*m*v^2
+        cubeRomeoImpulse = Math.Abs(cubeRomeo.mass * cubeRomeo.velocity.x);
+        cubeJuliaImpulse = Math.Abs(cubeJulia.mass * cubeJulia.velocity.x);
         velocityEnd = (cubeRomeoImpulse + cubeJuliaImpulse) / (cubeRomeo.mass + cubeJulia.mass);
-        cubeKineticEnd = (float)(0.5 * (cubeRomeo.mass + cubeJulia.mass) * Math.Pow(velocityEnd, 2.0));
-        forceOnJulia = cubeJulia.mass * velocityEnd - cubeJulia.velocity.x;
+        cubeKineticEnd = Math.Abs((float)(0.5 * (cubeRomeo.mass + cubeJulia.mass) * Math.Pow(velocityEnd, 2.0)));
+        forceOnJulia = Math.Abs(cubeJulia.mass * velocityEnd - cubeJulia.velocity.x);
 
 
         cubeJuliaTimeStep += Time.deltaTime;
-       timeSeriessInelasticCollision.Add(new List<float>() { cubeJuliaTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoImpulse, cubeRomeoKinetic, cubeJulia.position.x, cubeJulia.velocity.x, cubeJuliaImpulse, velocityEnd, cubeKineticEnd, forceOnJulia });
+       timeSeriessInelasticCollision.Add(new List<float>() { cubeJuliaTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x,cubeRomeo.mass, cubeRomeoImpulse, cubeRomeoKinetic, cubeJulia.position.x, cubeJulia.velocity.x,cubeJulia.mass, cubeJuliaImpulse, velocityEnd, cubeKineticEnd, forceOnJulia });
     }
     void OnApplicationQuit()
     {
@@ -113,7 +118,7 @@ public class CubeController : MonoBehaviour
     {
         using (var streamWriter = new StreamWriter("time_seriesElastic.csv"))
         {
-            streamWriter.WriteLine("currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoKinetic, springPotentialEnergy, cubeRomeoKinetic, springForceX ");
+            streamWriter.WriteLine("currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoKinetic, springPotentialEnergy, cubeRomeoKinetic, springForceX");
 
             foreach (List<float> timeStep in timeSeriesElasticCollision)
             {
@@ -121,23 +126,14 @@ public class CubeController : MonoBehaviour
                 streamWriter.Flush();
             }
         }
-        using (var streamWriter = new StreamWriter("time_seriesInelastic.csv"))
-        {
-            streamWriter.WriteLine(" cubeJuliaTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoImpulse, cubeRomeoKinetic, cubeJulia.position.x, cubeJulia.velocity.x, cubeJuliaImpulse, velocityEnd, cubeKineticEnd, forceOnJulia");
 
-            foreach (List<float> timeStep in timeSeriessInelasticCollision)
-            {
-                streamWriter.WriteLine(string.Join(",", timeStep));
-                streamWriter.Flush();
-            }
-        }
     }
 
     void WriteInelasticTimeSeriesToCsv()
     {
         using (var streamWriter = new StreamWriter("time_seriesInelastic.csv"))
         {
-            streamWriter.WriteLine(" cubeJuliaTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoImpulse, cubeRomeoKinetic, cubeJulia.position.x, cubeJulia.velocity.x, cubeJuliaImpulse, velocityEnd, cubeKineticEnd, forceOnJulia");
+            streamWriter.WriteLine("cubeJuliaTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x,cubeRomeo.mass, cubeRomeoImpulse, cubeRomeoKinetic, cubeJulia.position.x, cubeJulia.velocity.x,cubeJulia.mass, cubeJuliaImpulse, velocityEnd, cubeKineticEnd, forceOnJulia ");
 
             foreach (List<float> timeStep in timeSeriessInelasticCollision)
             {
