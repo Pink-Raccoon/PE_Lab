@@ -1,5 +1,4 @@
-\documentclass{article} 
-
+\documentclass[11pt,paper=A4, margin=1cm]{article}
 % Language setting
 % Replace `english' with e.g. `spanish' to change the document language
 \usepackage[german]{babel}
@@ -25,6 +24,8 @@
 \usepackage{subfiles} % Best loaded last in the preamble
 \usepackage[backend=biber]{biblatex}
 \usepackage{csquotes}
+% For labeling sub figures
+\usepackage{subfigure}
 
 \addbibresource{PE_Lab.bib}
 \pgfplotsset{compat=1.18}
@@ -50,7 +51,7 @@
 \subfile{subfiles/Zusammenfassung}
 
 \section {Aufbau des Experiments}
-\subfile{subfiles/Aufbau des Experiments}
+\subfile{subfiles/AufbauDesExperiments}
 
 \section {Physikalische Beschreibung der einzelnen Vorgänge}
 \subfile{subfiles/PhysikalischeBeschreibung}
