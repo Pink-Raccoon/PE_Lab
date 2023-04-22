@@ -42,10 +42,10 @@ public class CubeController : MonoBehaviour
         timeSeriesElasticCollision = new List<List<float>>();
         timeSeriessInelasticCollision = new List<List<float>>();
 
-
-        springMaxDeviation = spring.transform.position.x - spring.transform.localScale.y/2; //Maximale Auslenkung gerechnet anhand der linken seite des Feders
-        
-        springConstant = (float)((cubeRomeo.mass * Math.Pow(2.0, 2)) / (Math.Pow(springContraction, 2.0))); // Energieerhaltungsgesetz kinEnergie = PotEnergie : 1/2*m*v^2 = 1/2k * x^2
+        //Maximale Auslenkung gerechnet anhand der linken seite des Feders
+        springMaxDeviation = spring.transform.position.x - spring.transform.localScale.y/2;
+        // Energieerhaltungsgesetz kinEnergie = PotEnergie : 1/2*m*v^2 = 1/2k * x^2
+        springConstant = (float)((cubeRomeo.mass * Math.Pow(2.0, 2)) / (Math.Pow(springContraction, 2.0)));
 
         //Maximale Auslenkung gerechnet anhand der linken seite des Feders
         springMaxDeviation = spring.transform.position.x - spring.transform.localScale.y;
@@ -69,7 +69,8 @@ public class CubeController : MonoBehaviour
             cubeRomeo.AddForce(new Vector3(constantForce, 0f, 0f));
         }
 
-        cubeRomeoKinetic = Math.Abs((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))); // 1/2*m*v^2
+        // 1/2*m*v^2
+        cubeRomeoKinetic = Math.Abs((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0)));
 
 
         float collisionPosition = cubeRomeo.transform.position.x + cubeRomeo.transform.localScale.x / 2;
