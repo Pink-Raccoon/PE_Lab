@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.20)  22 APR 2023 23:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.20)  23 APR 2023 00:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1327,7 +1327,11 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'german'.
- (main.aux)
+ (main.aux
+
+LaTeX Warning: Label `lst:graphInelastic' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
@@ -1511,17 +1515,188 @@ File: ./images/2Lab_ExperimentOverview.png Graphic file (type png)
 Package pdftex.def Info: ./images/2Lab_ExperimentOverview.png  used on input li
 ne 7.
 (pdftex.def)             Requested size: 441.01772pt x 223.33186pt.
-)
+
 [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.97 \newpage
-              <./images/2Lab_ExperimentOverview.png>] [9]
-(subfiles/Rueckblick und Lehren aus dem Versuch.tex) [10]
+l.45     @
+          kimmie: pls descibe <./images/2Lab_ExperimentOverview.png>]
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:46:
+ You can't use `macro parameter character #' in horizontal mode.
+l.46     - script in c#
+                       
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 58.
+(..//UnityProj/Assets/CubeController.cs
+
+..//UnityProj/Assets/CubeController.cs:7: Package xcolor Error: Undefined color
+ `codegrey'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 public 
+           class CubeController : MonoBehaviour
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+..//UnityProj/Assets/CubeController.cs:8: Package xcolor Error: Undefined color
+ `codegrey'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 {
+     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+..//UnityProj/Assets/CubeController.cs:9: Package xcolor Error: Undefined color
+ `codegrey'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9     public 
+               Rigidbody cubeRomeo;
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+..//UnityProj/Assets/CubeController.cs:10: Package xcolor Error: Undefined colo
+r `codegrey'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10     public 
+                Rigidbody cubeJulia;
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+..//UnityProj/Assets/CubeController.cs:11: Package xcolor Error: Undefined colo
+r `codegrey'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11     public 
+                GameObject spring;
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:58:
+ Package xcolor Error: Undefined color `codegrey'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58     {..//UnityProj/Assets/CubeController.cs}
+                                                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Runaway argument?
+{lstinputlisting 
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:60:
+ Paragraph ended before \end  was complete.
+<to be read again> 
+                   \par 
+l.60 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:62:
+ LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62         \item J
+                    ulia:
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 62
+[][]
+ []
+
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:71:
+ LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71         \item \item
+                         Romeo:
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 71
+[][]
+ []
+
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:71:
+ LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71         \item \item R
+                          omeo:
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 71
+[][]
+ []
+
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:77:
+ LaTeX Error: \begin{lstinputlisting} on input line 57 ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77     \end{itemize}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) [9] (subfiles/Rueckblick und Lehren aus dem Versuch.tex) [10]
 (subfiles/ResultateMitGrafischerDarstellung.tex
-<./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.png, id=184, 385.44pt x 1
+<./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.png, id=191, 385.44pt x 1
 08.405pt>
 File: ./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.png Graphic file (ty
 pe png)
@@ -1529,14 +1704,14 @@ pe png)
 Package pdftex.def Info: ./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.p
 ng  used on input line 15.
 (pdftex.def)             Requested size: 441.01772pt x 124.0362pt.
-<./images/Elastisch/OrtAlsFunktionDerZeit.png, id=185, 1171.37625pt x 298.11375
+<./images/Elastisch/OrtAlsFunktionDerZeit.png, id=192, 1171.37625pt x 298.11375
 pt>
 File: ./images/Elastisch/OrtAlsFunktionDerZeit.png Graphic file (type png)
 <use ./images/Elastisch/OrtAlsFunktionDerZeit.png>
 Package pdftex.def Info: ./images/Elastisch/OrtAlsFunktionDerZeit.png  used on 
 input line 23.
 (pdftex.def)             Requested size: 441.01772pt x 112.23816pt.
-<./images/Inelastisch/GesamtImpluls.png, id=188, 1182.4175pt x 298.11375pt>
+<./images/Inelastisch/GesamtImpluls.png, id=195, 1182.4175pt x 298.11375pt>
 File: ./images/Inelastisch/GesamtImpluls.png Graphic file (type png)
 <use ./images/Inelastisch/GesamtImpluls.png>
 Package pdftex.def Info: ./images/Inelastisch/GesamtImpluls.png  used on input 
@@ -1556,13 +1731,13 @@ s been already used, duplicate ignored
 l.42 
       <./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.png> <./images/Elas
 tisch/OrtAlsFunktionDerZeit.png>]
-<./images/Inelastisch/ImpulsJulia.png, id=199, 393.47pt x 279.0425pt>
+<./images/Inelastisch/ImpulsJulia.png, id=206, 393.47pt x 279.0425pt>
 File: ./images/Inelastisch/ImpulsJulia.png Graphic file (type png)
 <use ./images/Inelastisch/ImpulsJulia.png>
 Package pdftex.def Info: ./images/Inelastisch/ImpulsJulia.png  used on input li
 ne 45.
 (pdftex.def)             Requested size: 441.01772pt x 312.75964pt.
-<./images/Inelastisch/ImpulsRomeo.png, id=200, 1171.37625pt x 298.11375pt>
+<./images/Inelastisch/ImpulsRomeo.png, id=207, 1171.37625pt x 298.11375pt>
 File: ./images/Inelastisch/ImpulsRomeo.png Graphic file (type png)
 <use ./images/Inelastisch/ImpulsRomeo.png>
 Package pdftex.def Info: ./images/Inelastisch/ImpulsRomeo.png  used on input li
@@ -1582,7 +1757,7 @@ s been already used, duplicate ignored
 l.58 
       <./images/Inelastisch/GesamtImpluls.png> <./images/Inelastisch/ImpulsJuli
 a.png>]
-<./images/Inelastisch/OrtJuliaAlsFunktionDerZeit.png, id=208, 1197.47375pt x 29
+<./images/Inelastisch/OrtJuliaAlsFunktionDerZeit.png, id=215, 1197.47375pt x 29
 8.11375pt>
 File: ./images/Inelastisch/OrtJuliaAlsFunktionDerZeit.png Graphic file (type pn
 g)
@@ -1590,13 +1765,13 @@ g)
 Package pdftex.def Info: ./images/Inelastisch/OrtJuliaAlsFunktionDerZeit.png  u
 sed on input line 61.
 (pdftex.def)             Requested size: 441.01772pt x 109.79088pt.
-<./images/Inelastisch/GeschwindigkeitRomeo.png, id=209, 385.44pt x 108.405pt>
+<./images/Inelastisch/GeschwindigkeitRomeo.png, id=216, 385.44pt x 108.405pt>
 File: ./images/Inelastisch/GeschwindigkeitRomeo.png Graphic file (type png)
 <use ./images/Inelastisch/GeschwindigkeitRomeo.png>
 Package pdftex.def Info: ./images/Inelastisch/GeschwindigkeitRomeo.png  used on
  input line 69.
 (pdftex.def)             Requested size: 441.01772pt x 124.0362pt.
-<./images/Inelastisch/GeschwindigkeitJulia.png, id=210, 385.44pt x 108.405pt>
+<./images/Inelastisch/GeschwindigkeitJulia.png, id=217, 385.44pt x 108.405pt>
 File: ./images/Inelastisch/GeschwindigkeitJulia.png Graphic file (type png)
 <use ./images/Inelastisch/GeschwindigkeitJulia.png>
 Package pdftex.def Info: ./images/Inelastisch/GeschwindigkeitJulia.png  used on
@@ -1622,7 +1797,7 @@ as been already used, duplicate ignored
 l.82 
       <./images/Inelastisch/ImpulsRomeo.png> <./images/Inelastisch/OrtJuliaAlsF
 unktionDerZeit.png> <./images/Inelastisch/GeschwindigkeitRomeo.png>]
-<./images/Inelastisch/Endgeschwindigkeit.png, id=222, 377.41pt x 108.405pt>
+<./images/Inelastisch/Endgeschwindigkeit.png, id=229, 377.41pt x 108.405pt>
 File: ./images/Inelastisch/Endgeschwindigkeit.png Graphic file (type png)
 <use ./images/Inelastisch/Endgeschwindigkeit.png>
 Package pdftex.def Info: ./images/Inelastisch/Endgeschwindigkeit.png  used on i
@@ -1642,9 +1817,6 @@ as been already used, duplicate ignored
 l.103 \newpage
                <./images/Inelastisch/GeschwindigkeitJulia.png> <./images/Inelas
 tisch/Endgeschwindigkeit.png>] (subfiles/Code.tex
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 20.
-
 (..//UnityProj/Assets/CubeController.cs
 
 ..//UnityProj/Assets/CubeController.cs:1: Package xcolor Error: Undefined color
@@ -5388,6 +5560,9 @@ If that doesn't work, type  X <return>  to quit.
 \openout7 = `main.lof'.
 
  [21] [22] (main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 45F5DA75FC159DEAFBF880A250F36C74;1498.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -5395,13 +5570,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44228 strings out of 476331
- 989049 string characters out of 5787765
- 2030954 words of memory out of 5000000
+ 44236 strings out of 476331
+ 989223 string characters out of 5787765
+ 2030990 words of memory out of 5000000
  63605 multiletter control sequences out of 15000+600000
  521598 words of font info for 68 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,7n,94p,723b,2209s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,7n,94p,723b,2163s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\miche\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk><C:/Users/miche/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/miche/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -5420,9 +5595,9 @@ ublic/amsfonts/cm/cmsy10.pfb><C:/Users/miche/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/miche/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/miche/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on C:/Workarea\PE_Lab\out\main.pdf (22 pages, 1325392 bytes).
+Output written on C:/Workarea\PE_Lab\out\main.pdf (22 pages, 1327666 bytes).
 PDF statistics:
- 709 PDF objects out of 1000 (max. 8388607)
- 349 named destinations out of 1000 (max. 500000)
+ 716 PDF objects out of 1000 (max. 8388607)
+ 355 named destinations out of 1000 (max. 500000)
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
