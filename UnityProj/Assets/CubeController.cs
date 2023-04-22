@@ -32,24 +32,19 @@ public class CubeController : MonoBehaviour
     private double accelarationTime = 1.0;
     float springConstant = 0f;
     float springMaxDeviation = 0f;
-    
+    float springContraction = 1.3f;
 
-    float springContraction = 1.5f;
     // Start is called before the first frame update
     void Start()
     {
         startime = Time.fixedTimeAsDouble;
 
-
-
         timeSeriesElasticCollision = new List<List<float>>();
         timeSeriessInelasticCollision = new List<List<float>>();
 
-        springMaxDeviation = spring.transform.position.x - spring.transform.localScale.y / 2; //Maximale Auslenkung gerechnet anhand der linken seite des Feders
+        springMaxDeviation = spring.transform.position.x - spring.transform.localScale.y; //Maximale Auslenkung gerechnet anhand der linken seite des Feders
         
         springConstant = (float)((cubeRomeo.mass * Math.Pow(2.0, 2)) / (Math.Pow(springContraction, 2.0))); // Energieerhaltungsgesetz kinEnergie = PotEnergie : 1/2*m*v^2 = 1/2k * x^2
-        
-
     }
 
     // Update is called once per frame
@@ -57,6 +52,7 @@ public class CubeController : MonoBehaviour
     {
 
     }
+
     // FixedUpdate can be called multiple times per frame
     void FixedUpdate()
     {
@@ -69,13 +65,9 @@ public class CubeController : MonoBehaviour
             cubeRomeo.AddForce(new Vector3(constantForce, 0f, 0f));
         }
 
-
         cubeRomeoKinetic = Math.Abs((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))); // 1/2*m*v^2
-        springPotentialEnergy = Math.Abs((float)(0.5 * springConstant * Math.Pow(springContraction,2.0)));
         //currentTimeStep += Time.deltaTime;
         //timeSeriesElasticCollision.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoKinetic, springPotentialEnergy, cubeRomeoKinetic});
-
-
 
 
         float collisionPosition = cubeRomeo.transform.position.x + cubeRomeo.transform.localScale.x / 2;
@@ -83,13 +75,12 @@ public class CubeController : MonoBehaviour
         if (collisionPosition >= springMaxDeviation)
         {
             float springForceX = (collisionPosition - springMaxDeviation) * -springConstant;
+            springPotentialEnergy =(float)(0.5 * springConstant * Math.Pow(collisionPosition - springMaxDeviation, 2.0));
             cubeRomeo.AddForce(new Vector3(springForceX, 0f, 0f));
             ChangeCubeTexture();
             currentTimeStep += Time.deltaTime;
-            timeSeriesElasticCollision.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoKinetic, springPotentialEnergy, cubeRomeoKinetic, springForceX });
+            timeSeriesElasticCollision.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x,  springPotentialEnergy, cubeRomeoKinetic, springForceX });
         }
-
-
 
         cubeRomeoKinetic = Math.Abs((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))); // 1/2*m*v^2
         cubeRomeoImpulse = Math.Abs(cubeRomeo.mass * cubeRomeo.velocity.x);
@@ -98,9 +89,8 @@ public class CubeController : MonoBehaviour
         cubeKineticEnd = Math.Abs((float)(0.5 * (cubeRomeo.mass + cubeJulia.mass) * Math.Pow(velocityEnd, 2.0)));
         forceOnJulia = Math.Abs(cubeJulia.mass * velocityEnd - cubeJulia.velocity.x);
 
-
         cubeJuliaTimeStep += Time.deltaTime;
-       timeSeriessInelasticCollision.Add(new List<float>() { cubeJuliaTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x,cubeRomeo.mass, cubeRomeoImpulse, cubeRomeoKinetic, cubeJulia.position.x, cubeJulia.velocity.x,cubeJulia.mass, cubeJuliaImpulse, velocityEnd, cubeKineticEnd, forceOnJulia });
+        timeSeriessInelasticCollision.Add(new List<float>() { cubeJuliaTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x,cubeRomeo.mass, cubeRomeoImpulse, cubeRomeoKinetic, cubeJulia.position.x, cubeJulia.velocity.x,cubeJulia.mass, cubeJuliaImpulse, velocityEnd, cubeKineticEnd, forceOnJulia });
     }
     void OnApplicationQuit()
     {
@@ -111,7 +101,7 @@ public class CubeController : MonoBehaviour
     {
         using (var streamWriter = new StreamWriter("time_seriesElastic.csv"))
         {
-            streamWriter.WriteLine("currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoKinetic, springPotentialEnergy, cubeRomeoKinetic, springForceX");
+            streamWriter.WriteLine("currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, springPotentialEnergy, cubeRomeoKinetic, springForceX");
 
             foreach (List<float> timeStep in timeSeriesElasticCollision)
             {
