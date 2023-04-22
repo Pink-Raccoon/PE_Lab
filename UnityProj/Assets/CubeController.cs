@@ -32,7 +32,7 @@ public class CubeController : MonoBehaviour
     double accelarationTime = 1.0;
     float springConstant = 0f;
     float springMaxDeviation = 0f;
-    float springContraction = 1.5f;
+    float springContraction = 1.3f;
 
     // Start is called before the first frame update
     void Start()
