@@ -16,8 +16,6 @@ public class CubeController : MonoBehaviour
     private List<List<float>> timeSeriesElasticCollision;
     private List<List<float>> timeSeriessInelasticCollision;
 
-
-    
     private string filePath;
     private byte[] fileData;
     float springPotentialEnergy = 0f;
@@ -40,22 +38,19 @@ public class CubeController : MonoBehaviour
     {
         startime = Time.fixedTimeAsDouble;
 
-
-
         timeSeriesElasticCollision = new List<List<float>>();
         timeSeriessInelasticCollision = new List<List<float>>();
 
-        springMaxDeviation = spring.transform.position.x - spring.transform.localScale.y / 2; //Maximale Auslenkung gerechnet anhand der linken seite des Feders
-        
-        springConstant = (float)((cubeRomeo.mass * Math.Pow(2.0, 2)) / (Math.Pow(springContraction, 2.0))); // Energieerhaltungsgesetz kinEnergie = PotEnergie : 1/2*m*v^2 = 1/2k * x^2
-        
+        //Maximale Auslenkung gerechnet anhand der linken seite des Feders
+        springMaxDeviation = spring.transform.position.x - spring.transform.localScale.y / 2;
 
+        // Energieerhaltungsgesetz kinEnergie = PotEnergie : 1/2*m*v^2 = 1/2k * x^2
+        springConstant = (float)((cubeRomeo.mass * Math.Pow(2.0, 2)) / (Math.Pow(springContraction, 2.0)));
     }
 
     // Update is called once per frame
     void Update()
     {
-
     }
     // FixedUpdate can be called multiple times per frame
     void FixedUpdate()
@@ -69,14 +64,10 @@ public class CubeController : MonoBehaviour
             cubeRomeo.AddForce(new Vector3(constantForce, 0f, 0f));
         }
 
-
         cubeRomeoKinetic = Math.Abs((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))); // 1/2*m*v^2
         springPotentialEnergy = Math.Abs((float)(0.5 * springConstant * Math.Pow(springContraction,2.0)));
         //currentTimeStep += Time.deltaTime;
         //timeSeriesElasticCollision.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoKinetic, springPotentialEnergy, cubeRomeoKinetic});
-
-
-
 
         float collisionPosition = cubeRomeo.transform.position.x + cubeRomeo.transform.localScale.x / 2;
 
@@ -89,15 +80,13 @@ public class CubeController : MonoBehaviour
             timeSeriesElasticCollision.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoKinetic, springPotentialEnergy, cubeRomeoKinetic, springForceX });
         }
 
-
-
-        cubeRomeoKinetic = Math.Abs((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))); // 1/2*m*v^2
+        // 1/2*m*v^2
+        cubeRomeoKinetic = Math.Abs((float)(0.5 * cubeRomeo.mass * Math.Pow(cubeRomeo.velocity.x, 2.0))); 
         cubeRomeoImpulse = Math.Abs(cubeRomeo.mass * cubeRomeo.velocity.x);
         cubeJuliaImpulse = Math.Abs(cubeJulia.mass * cubeJulia.velocity.x);
         velocityEnd = (cubeRomeoImpulse + cubeJuliaImpulse) / (cubeRomeo.mass + cubeJulia.mass);
         cubeKineticEnd = Math.Abs((float)(0.5 * (cubeRomeo.mass + cubeJulia.mass) * Math.Pow(velocityEnd, 2.0)));
         forceOnJulia = Math.Abs(cubeJulia.mass * velocityEnd - cubeJulia.velocity.x);
-
 
         cubeJuliaTimeStep += Time.deltaTime;
        timeSeriessInelasticCollision.Add(new List<float>() { cubeJuliaTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x,cubeRomeo.mass, cubeRomeoImpulse, cubeRomeoKinetic, cubeJulia.position.x, cubeJulia.velocity.x,cubeJulia.mass, cubeJuliaImpulse, velocityEnd, cubeKineticEnd, forceOnJulia });
@@ -138,12 +127,16 @@ public class CubeController : MonoBehaviour
 
     void ChangeCubeTexture()
     {
-        filePath = "Assets/Images/snoopy-flower-cynthia-t-thomas.jpg";                   // the path of the image
-        fileData = File.ReadAllBytes(filePath);              // 1.read the bytes array
-        Texture2D tex = new Texture2D(2, 2);                 // 2.create a texture named tex
-        tex.LoadImage(fileData);                             // 3.load inside tx the bytes and use the correct image size
-        GetComponent<Renderer>().material.mainTexture = tex; // 4.apply tex to material.mainTexture 
-
+        // the path of the image
+        filePath = "Assets/Images/snoopy-flower-cynthia-t-thomas.jpg";
+        // 1.read the bytes array
+        fileData = File.ReadAllBytes(filePath);
+        // 2.create a texture named tex
+        Texture2D tex = new Texture2D(2, 2);
+        // 3.load inside tx the bytes and use the correct image size
+        tex.LoadImage(fileData);
+        // 4.apply tex to material.mainTexture 
+        GetComponent<Renderer>().material.mainTexture = tex;
     }
 
     void OnCollisionEnter(Collision collision)
@@ -166,5 +159,4 @@ public class CubeController : MonoBehaviour
             joint.enableCollision = false;
         }
     }
-
 }
