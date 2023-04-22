@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-df = pd.read_csv("D:/ZHAW_Code/PE_Lab/UnityProj/TimeSeries/time_seriesInelastic.csv")
+df = pd.read_csv("C:/Users/ashas/ZHAW_Code/PE_Lab/UnityProj/TimeSeries/time_seriesInelastic.csv")
 
 plt.figure(figsize=(20,20))
 plt.subplot(4,1,1)

@@ -28,12 +28,10 @@ public class CubeController : MonoBehaviour
     float velocityEnd = 0f;
     float cubeKineticEnd = 0f;
     float constantForce = 4f;
-    float velocity = 2f;
     double startime = 0;
     private double accelarationTime = 1.0;
     float springConstant = 0f;
     float springMaxDeviation = 0f;
-    float accelaration = 0f;
     
 
     float springContraction = 1.5f;
@@ -86,12 +84,7 @@ public class CubeController : MonoBehaviour
         {
             float springForceX = (collisionPosition - springMaxDeviation) * -springConstant;
             cubeRomeo.AddForce(new Vector3(springForceX, 0f, 0f));
-
-            filePath = "Assets/Images/snoopy-flower-cynthia-t-thomas.jpg";                   // the path of the image
-            fileData = File.ReadAllBytes(filePath);              // 1.read the bytes array
-            Texture2D tex = new Texture2D(2, 2);                 // 2.create a texture named tex
-            tex.LoadImage(fileData);                             // 3.load inside tx the bytes and use the correct image size
-            GetComponent<Renderer>().material.mainTexture = tex; // 4.apply tex to material.mainTexture 
+            ChangeCubeTexture();
             currentTimeStep += Time.deltaTime;
             timeSeriesElasticCollision.Add(new List<float>() { currentTimeStep, cubeRomeo.position.x, cubeRomeo.velocity.x, cubeRomeoKinetic, springPotentialEnergy, cubeRomeoKinetic, springForceX });
         }
@@ -141,6 +134,16 @@ public class CubeController : MonoBehaviour
                 streamWriter.Flush();
             }
         }
+    }
+
+    void ChangeCubeTexture()
+    {
+        filePath = "Assets/Images/snoopy-flower-cynthia-t-thomas.jpg";                   // the path of the image
+        fileData = File.ReadAllBytes(filePath);              // 1.read the bytes array
+        Texture2D tex = new Texture2D(2, 2);                 // 2.create a texture named tex
+        tex.LoadImage(fileData);                             // 3.load inside tx the bytes and use the correct image size
+        GetComponent<Renderer>().material.mainTexture = tex; // 4.apply tex to material.mainTexture 
+
     }
 
     void OnCollisionEnter(Collision collision)
