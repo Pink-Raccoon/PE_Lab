@@ -1,16 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Feb 26 20:15:00 2023
-
-@author: Asha
-"""
-
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
-
-df = pd.read_csv("D:/ZHAW_Code/PE_Lab/UnityProj/TimeSeries/time_seriesElastic.csv")
+df = pd.read_csv("../UnityProj/TimeSeries/time_seriesElastic.csv")
 
 plt.figure(figsize=(20,20))
 plt.subplot(4,1,1)
