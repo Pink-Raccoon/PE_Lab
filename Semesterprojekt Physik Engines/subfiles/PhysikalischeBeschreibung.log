@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.5)  22 APR 2023 19:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.5)  22 APR 2023 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1301,6 +1301,37 @@ Package csquotes Info: ... configuration file loaded successfully.
 (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
 ))
+(C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   n
+l.54 }
+      
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   n
+l.54 }
+      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! Package Listings Error: Strict positive integer expected.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 }
+      
+You can't use `2 numbersep' as tabsize. Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.sty
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip149
@@ -1568,10 +1599,10 @@ Package logreq Info: Writing requests to 'PhysikalischeBeschreibung.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43145 strings out of 476339
- 969545 string characters out of 5788592
- 1930642 words of memory out of 5000000
- 62919 multiletter control sequences out of 15000+600000
+ 43167 strings out of 476339
+ 969985 string characters out of 5788592
+ 1931891 words of memory out of 5000000
+ 62937 multiletter control sequences out of 15000+600000
  518189 words of font info for 54 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  119i,5n,111p,768b,1681s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1588,7 +1619,7 @@ a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Asha/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
 rs/Asha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 
-Output written on PhysikalischeBeschreibung.pdf (3 pages, 134041 bytes).
+Output written on PhysikalischeBeschreibung.pdf (3 pages, 134026 bytes).
 PDF statistics:
  92 PDF objects out of 1000 (max. 8388607)
  7 named destinations out of 1000 (max. 500000)
