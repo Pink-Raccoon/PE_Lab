@@ -1,42 +1,85 @@
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
-In diesem Kapitel werden die physikalische Vorgänge des Versuches beschrieben. Es geschehen drei Vorgänge, der Raketentrieb, einen elastischen Stoss und einen inelastischen Stoss.
+In diesem Kapitel werden die physikalische Vorgänge des Versuches beschrieben. 
 Die gegebenen Massen sind:
 \begin{itemize}
 	\item Gewicht(m) = 2kg
 	\item Velocity(v) = 2m/s
 	\item Würfelseite = 1.5m
 \end{itemize}
-
-\subsection{Raketenantrieb\\}
-Um die Kraft des Raketenantriebs zu berechnen nehmen wir die gewünschte Geschwindigkeit und berechnen damit die Beschleunigung,a. Da Kraft:\\ $F = m*a$.\\
-Um dieses Anfangwertproblems zu lösen nehmen wir die Formel \\$\dot{v} = a$\\
-$2m*s^{-1} \rightarrow$  $-2m*s^{-2} \rightarrow$  $a = [\frac{2m}{s^{2}}]$\\\\
-Somit:
-$F = 2kg * \frac{2m}{s^{2}} => \frac{4kg*m}{s^{2}} = 4N$\\
-4N werden deshalb als konstante Kraft angewendet, damit auch die gewünschte Geschwindigkeit erreicht wird.
-
-
-
-
-
-
-
-
+Es geschehen drei Vorgänge, die Beschleunigung durch die konstante Kraft, einen elastischen Stoss und einen inelastischen Stoss.
+Ein Würfel,namens Romeo, wird durch den konstanten Raketenantrieb beschleunigt, bis maximal 2m/s. Romeo trifft auf eine Feder zu, die an eine Wand befestigt ist. Dabei geschieht ein elastischer Stoss und der Würfel gleitet wieder zurück und stösst dabei einen zweiten Würfel, Julia, diesmal passiert der Stoss inelastisch. Sämtliche Vorgänge erfolgen ohne Reibungskräfte.
+\subsection{Raketenantrieb}
+Um die konstante Kraft zu berechnen nehmen wir die gewünschte Geschwindigkeit und berechnen damit die Beschleunigung, weil die Kraft sowohl von der Masse wie auch der Beschleunig abhängt und gegeben ist durch die Formel\cite{tiplerpaula.PhysikFurStudierende}
+\begin{mdframed}
+		 $F = m*a$
+\end{mdframed}
+Um dieses Anfangwertproblems zu lösen leiten wir die Geschwindigkeit ab \cite{tiplerpaula.PhysikFurStudierende}:
+\begin{mdframed}
+		 $\dot{v} = a$\\
+$2m*s^{-1} \rightarrow$  $-2m*s^{-2} \rightarrow$  $a = [\frac{2m}{s^{2}}]$
+\end{mdframed}
+Die Zeit, die gebraucht wird um den Würfel zu beschleunigen, wird durch folgende Formel beschrieben \cite{tiplerpaula.PhysikFurStudierende}:
+\begin{mdframed}
+ $v=a*t \rightarrow$ $t=\frac{v}{a} \rightarrow$ $\frac{2m/s}{2m/s^{2}} = 1s$
+\end{mdframed}
+Somit können wir nun die Kraft ausrechnen:
+\begin{mdframed}
+$F = 2kg * \frac{2m}{s^{2}} => \frac{4kg*m}{s^{2}} = 4N$
+\end{mdframed}
+4N werden deshalb als konstante Kraft angewendet, damit auch die gewünschte Geschwindigkeit erreicht wird, danach wird keine Kraft mehr hinzugefügt und Romeo gleitet auf die Feder zu.
+\newpage
 \subsection{Elastischer Stoss}
-Beim elastischen Stoss ist die kinetische Energie vom Stosspartner vor und nach der Kollision gleich.
-Kinetische Energie wird mit folgender Formel berechnet:\\
-$\frac{1}{2} * m * v^{2}$ \\
-Setzt man die Massen von diesem Projekt ein bekommt man:\\
-
+Beim elastischen Stoss ist die kinetische Energie vom Stosspartner vor und nach der Kollision gleich \cite{tiplerpaula.PhysikFurStudierende}. Gemäss Auftrag wird die Federlänge und Federkonstante so dimensioniert, dass der Würfel nicht auf die Wand trifft.
+Die kinetische Energie des Würfels wird mit folgender Formel berechnet \cite{tiplerpaula.PhysikFurStudierende}:
+\begin{mdframed}
+$E_{kin_{Romeo}}=\frac{1}{2} * m * v^{2}$
+\end{mdframed}
+Setzt man die Massen von diesem Projekt ein bekommt man:
+\begin{mdframed}
 $\frac{1}{2} * 2kg * (\frac{2m}{s})^{2} = 4J$
-
+\end{mdframed}
+Während des Stosses wird die kinetische Energie auf die Feder übetragen. Die Feder speichert diese Energie in Form von potentieller Energie, da sie zusammenngedrückt wird. Sobald sie Romeo zurück stösst, wird diese Energie in eine kinetische zurückgewandelt.\\\\
+Um die Federkonstante zu berechnen, nehmen wir die Tatsache der Energieerhaltung zu Nutze und setzen die ausgerechnete kinetische Energie gleich mit der potentiellen Energie der Feder.\\
+Die Formel für die pontentielle Energie des Feders lautet\cite{tiplerpaula.PhysikFurStudierende}:
+\begin{mdframed}
+$E_{pot_{Feder}}=\frac{1}{2} * k * x^{2}$
+\end{mdframed}
+Die Gleichsetzung der Energien, sieht folgendermassen aus\cite{tiplerpaula.PhysikFurStudierende}:
+\begin{mdframed}
+$E_{kin_{Romeo}}=E_{pot_{Feder}}$\\\\
+$\frac{1}{2} * m * v^{2} = \frac{1}{2} * k * x^{2}$
+\end{mdframed}
+Diese Gleichung stellen wir um und lösen nach der Federkonstante k auf:
+\begin{mdframed}
+$ k=\frac{m * v^{2}}{x^{2}}$
+\end{mdframed}
+Mit den eingesetzen Massen und die gewählte maximale Auslenkung erhalten wir:
+\begin{mdframed}
+$\frac{2kg*(2m/s)^{2}}{1.5m^{2}} = 3.6 N$
+\end{mdframed}
+Jetzt wo wir die Federkonstante und Länge haben, können wir einen langsamen Stoss gewährleisten.
+\newpage
 \subsection{Inelastischer Stoss}
+Beim vollständigen inelastischen Stoss, werden beide Stosspartner nach der Kollision verrbunden sein und dieselbe Geschwindigkeit haben\cite{tiplerpaula.PhysikFurStudierende}. Die Formeln, die wir für diesen Vorgang brauchen sind, die der Impulse der beiden Körper:
+\begin{mdframed}
+$Impuls_{Romeo} = m_{Romeo}*v_{Romeo}$\\\\
+$Impuls_{Julia} = m_{Julia}*v_{Julia}$
+\end{mdframed}
+ Bei diesem Vorgang wird ein Teil des Impulses von Romeo auf Julia übertragen. Der Gesamtimpuls bleibt erhalten vor und nach dem Stoss und wird durch den Impulserhaltungsatz beschrieben\cite{tiplerpaula.PhysikFurStudierende}:
+\begin{mdframed}
+$ m_{Romeo}*v_{Romeo} +  m_{Julia}*v_{Julia} = (m_{Romeo} + m_{Julia})*v_{Ende}$
+\end{mdframed}
+Die Endgeschwindigkeit ist die Geschwindigkeit, die beide Körper gemeinsam haben nach dem Stoss.\\
+Die Relation zwischen der kinetischen Energie und des Impulses, können wir folgendermassen herleiten\cite{tiplerpaula.PhysikFurStudierende}:
+\begin{mdframed}
+$E_{kin}=\frac{1}{2} * m * v^{2} = \frac{(mv)^{2}}{2m} = \frac{p^{2}}{2m}$
+\end{mdframed}
+Wenden wir dies nach dem Stoss an, sehen wir, dass die kinetische geringer wird:
+\begin{mdframed}
+$E_{kin_{Ende}}=\frac{p^{2}}{2(m_{Romeo} + m_{Julia})} $
+\end{mdframed}
 
-
-
-
-\subsection{}
 
 \end{document}
