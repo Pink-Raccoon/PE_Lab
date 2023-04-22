@@ -1,12 +1,19 @@
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
-Im Code wurde der Würfel, welcher am anfangt beschleunigt wird, Romeo benannt und entsprechend der andere Würfel Julia. Die Würfeln werden in den nächsten Abschnitten ebenfalls so bezeichnet, damit man denn Zusammenhang mit den Screenshots vom Code leichter versteht. 
+Im Code wurde der Würfel, welcher am anfangt beschleunigt wird, Romeo benannt und der andere Würfel entsprechend Julia. Die Würfel werden in den nächsten Abschnitten ebenfalls so bezeichnet, damit man denn Zusammenhang mit den Screenshots des Codes leichter versteht. Zur Kontrolle der Werte und Grafik Erstellung wurde zwei verschiedene Timeseries erstellt, eine für die elastischen Stoss relevanten Werte und eine für die inelastischen.
 \\
 \\
-Für die Beschleunigung von Romeo wird, gemäss Berechnung, eine konstante Kraft von 4 (Newton) im FixedUpdate hinzugefügt. Es wurde auch bestummen, dass nach 2 Sekunden Romeo eine Geschwindigkeit von 2 m/s erreichen sollte und daraus eine ergibt sich eine Beschleunigungszeit von 1 Sekunde. Das Hinzufügen der Kraft passiert dementsprechend nur solange die Beschleunigungszeit noch nicht erreicht wurde.
-
-Für den Teil mit dem elastischen Stoss, wurde ein Feder GameObject hinzugefügt. Die Werte für die Federauslenkung und Federkonstante wird beim Start ausgerechnet, bevor sich Romeo bewegt. Da beim zusammenstoss Romeo die Feder zusammendrückt, wird für die Auslenkung die Ruhelage der Feder genommen. Da in Unity sich die Position im Zentrum vom Objekt ist, 
+Für die Beschleunigung von Romeo wird gemäss Berechnung, eine konstante Kraft von 4 (Newton) im FixedUpdate hinzugefügt. Es wurde auch bestummen, dass nach 2 Sekunden Romeo eine Geschwindigkeit von 2 m/s erreichen sollte und daraus ergibt sich eine Beschleunigungszeit von 1 Sekunde. Das Hinzufügen der Kraft passiert solange die Beschleunigungszeit noch nicht erreicht wurde. Von Romeo wird dann auch die kinetische Energie berechnet und in beiden Timeseries notiert.
+\\
+\\
+Beim Teil mit dem elastischen Stoss wurde ein Feder GameObject hinzugefügt. Die Federkonstante wird am Start berechnet bevor sich Romeo bewegt. Dies wird wie in der Berechnung erwähnt das Energieerhaltungsgesetz angewendet und für die Federstauchung wurde 1.3 (Meter) gewählt, sodass der berechnete Federkonstante Wert 4.733 (N/m) beträgt. Beim Start wird ebenfalls die Position der Feder in der Ruhelage, dort welche Romeo die Feder zuerst berühren würde, in der Variable springMaxDeviation gespeichert. \\ 
+Diese wird in FixedUpdate gebraucht um zu überprüfen, ob Romeo bereits auf die Feder eintrifft. 
+Sobald dies der Fall ist, verändert sich die Texture von Romeo und dann wird jeweils die Federkraft darin berechnet und an Romeo hinzugefügt. Dafür wird der Längenunterschied der Feder mit der Differenz aus der Position von Romeo und springMaxDeviation berechnet und danach mit der negativen Federkonstante multipliziert. Dadurch bewegt sich Romeo  zurückt. Als Überprüfung der Energieerhaltung wird schlussendlich auch die potentiele Energie der Feder berechnet und in der elastischen Timeseries zusammen mit der Federkraft aufgeschrieben. 
+\\
+\\
+Für den inelastischen Stoss mit Julia wird im OnCollisionEnter jeweils geprüft, ob es sich bei der Kollision um Julia handelt. Nur wenn dies der Fall ist, wird dann ein FixedJoint an den Berührungspunkte zwischen Romeo und Julia hinzugefügt um die damit sie zusammenkleben. Zum Schluss muss noch .enableCollision auf false gesetzt werden, damit sich die beiden Würfeln nicht mehr kollidieren. 
+\\ \\ Im FixedUpdate wird dann für die inelastische Timeseries die Impulse berechnet und die gemeinsame Endgeschwindigkeit und kinetische Energie. Mit dieser Geschwindigkeit kann dann auch die Kraft welche auf Julia wirkt errechnet werden.
 
 
 \end{document}
