@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.5)  22 APR 2023 20:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.5)  22 APR 2023 21:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -15,8 +15,8 @@ Package: import 2020/04/01  v 6.2
 (../main.tex
 (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
-File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+(C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -61,28 +61,7 @@ german.tex
 Package babel Info: Importing font and identification data for german
 (babel)             from babel-de-1901.ini. Reported on input line 25.
 )
-(C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
-
-(C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 227.
-
-(C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-) (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx
-)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
-Package xcolor Info: Model `RGB' extended on input line 1369.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-) (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
@@ -233,13 +212,14 @@ g
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
-)
+
+(C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
 \Gin@req@height=\dimen169
 \Gin@req@width=\dimen170
-)
-(C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+) (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
-
 (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
@@ -456,7 +436,25 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \colbreak@box=\box100
 \mc@col@check@num=\count301
 )
-(C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+(C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks25
 \inpenc@posthook=\toks26
@@ -1304,34 +1302,6 @@ File: csquotes.cfg
 (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-! Missing = inserted for \ifnum.
-<to be read again> 
-                   n
-l.54 }
-      
-I was expecting to see `<', `=', or `>'. Didn't.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   n
-l.54 }
-      
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-
-! Package Listings Error: Strict positive integer expected.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.54 }
-      
-You can't use `2 numbersep' as tabsize. Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.sty
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip149
@@ -1356,12 +1326,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'german'.
-
-
-LaTeX Warning: Unused global option(s):
-    [paper,margin].
-
-(PhysikalischeBeschreibung.aux)
+ (PhysikalischeBeschreibung.aux)
 \openout1 = `PhysikalischeBeschreibung.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -1382,6 +1347,41 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
+* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=443.57848pt
+* \textheight=681.15898pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=49.79231pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 
 (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
@@ -1408,42 +1408,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 g
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: letterpaper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
-* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=443.57848pt
-* \textheight=681.15898pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
-* \topmargin=-52.36449pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=11.0pt
-* \footskip=30.0pt
-* \marginparwidth=49.79231pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 Package hyperref Info: Link coloring ON on input line 3.
-(PhysikalischeBeschreibung.out) (PhysikalischeBeschreibung.out)
+ (PhysikalischeBeschreibung.out) (PhysikalischeBeschreibung.out)
 \@outlinefile=\write5
 \openout5 = `PhysikalischeBeschreibung.out'.
 
@@ -1470,14 +1436,14 @@ Package biblatex Info: Reference segment=0 on input line 3.
 
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 1 undefined 
-on input line 14.
+on input line 15.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 
 (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 
 
 (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1485,110 +1451,105 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 1 undefined 
-on input line 18.
+on input line 19.
 
 
-Overfull \hbox (97.7857pt too wide) in paragraph at lines 18--20
-\OT1/cmr/m/n/10.95 Um die-ses An-fang-wert-pro-blems zu l[]osen lei-ten wir die
- Ge-schwin-dig-keit ab [[]]:
+Overfull \hbox (50.81833pt too wide) in paragraph at lines 19--21
+\OT1/cmr/m/n/10 Um die-ses An-fang-wert-pro-blems zu l[]osen lei-ten wir die Ge
+-schwin-dig-keit ab [[]]:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
  []
 
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 1 undefined 
-on input line 23.
+on input line 24.
 
 [1
 
 {C:/Users/Asha/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 2 undefined 
-on input line 34.
-
-
-LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 2 undefined 
 on input line 35.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--37
+LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 2 undefined 
+on input line 36.
+
+
+LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 2 undefined 
+on input line 46.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--48
 
  []
 
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 2 undefined 
-on input line 45.
+on input line 50.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--47
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
- []
-
-
-Overfull \hbox (12.69498pt too wide) in paragraph at lines 43--47
-\OT1/cmr/m/n/10.95 Die For-mel f[]ur die pon-ten-ti-el-le Ener-gie des Fe-ders 
-lautet[[]]:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--47
-
- []
-
-
-LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 2 undefined 
-on input line 49.
-
-
-Overfull \hbox (23.87434pt too wide) in paragraph at lines 49--51
-\OT1/cmr/m/n/10.95 Die Gleich-set-zung der Ener-gi-en, sieht fol-gen-der-mas-se
-n aus[[]]:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--51
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--53
-
- []
-
-
-Overfull \hbox (22.07205pt too wide) in paragraph at lines 62--63
-\OT1/cmr/m/n/10.95 Jetzt wo wir die Fe-der-kon-stan-te und L[]ange ha-ben, k[]o
-nnen wir einen lang-sa-men Stoss gew[]ahrleisten. 
  []
 
 [2]
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 3 undefined 
-on input line 65.
+on input line 66.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--69
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 3 undefined 
-on input line 70.
+on input line 71.
+
+
+Overfull \hbox (128.61023pt too wide) in paragraph at lines 71--73
+\OT1/cmr/m/n/10 bleibt er-hal-ten vor und nach dem Stoss und wird durch den Im-
+pul-ser-hal-tungs-atz beschrieben[[]]:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
+
+ []
 
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 3 undefined 
-on input line 75.
+on input line 76.
+
+
+Overfull \hbox (171.05576pt too wide) in paragraph at lines 75--78
+\OT1/cmr/m/n/10 Die Re-la-ti-on zwi-schen der ki-ne-ti-schen Ener-gie und des I
+m-pul-ses, k[]onnen wir fol-gen-der-mas-sen herleiten[[]]:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--78
+
+ []
 
 [3] (PhysikalischeBeschreibung.aux)
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `PhysikalischeBeschreibung.out' has not chang
-ed.
-(rerunfilecheck)             Checksum: 8D6419C90B27183DF5F3B840B060E4BB;400.
+
+Package rerunfilecheck Warning: File `PhysikalischeBeschreibung.out' has change
+d.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `PhysikalischeBeschreibung.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  E52857C14C17C02CF80FEEC797EA0639;703.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                PhysikalischeBeschreibung
@@ -1599,29 +1560,29 @@ Package logreq Info: Writing requests to 'PhysikalischeBeschreibung.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43167 strings out of 476339
- 969985 string characters out of 5788592
- 1931891 words of memory out of 5000000
- 62937 multiletter control sequences out of 15000+600000
- 518189 words of font info for 54 fonts, out of 8000000 for 9000
+ 43138 strings out of 476339
+ 969652 string characters out of 5788592
+ 1931712 words of memory out of 5000000
+ 62916 multiletter control sequences out of 15000+600000
+ 515234 words of font info for 44 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 119i,5n,111p,768b,1681s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,5n,111p,768b,1682s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Asha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1
-095.pk><C:/Users/Asha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+000.pk><C:/Users/Asha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Asha/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmbx12.pfb><C:/Users/Asha/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmmi10.pfb><C:/Users/Asha/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Asha/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Asha/AppData/Local/Progr
+ts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Asha/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Asha/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Asha/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Asha/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Asha/
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Asha/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Asha/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
-rs/Asha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+rs/Asha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 
-Output written on PhysikalischeBeschreibung.pdf (3 pages, 134026 bytes).
+Output written on PhysikalischeBeschreibung.pdf (3 pages, 135427 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 83 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

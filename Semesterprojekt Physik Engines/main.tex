@@ -1,8 +1,8 @@
-\documentclass[11pt,paper=A4, margin=1cm]{article}
+\documentclass{article}[11pt,paper=A4, margin=1cm]
 % Language setting
 % Replace `english' with e.g. `spanish' to change the document language
 \usepackage[german]{babel}
-\usepackage{xcolor}
+
 % Set page size and margins
 % Replace `letterpaper' with `a4paper' for UK/EU standard size
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}% Useful packages
@@ -33,6 +33,7 @@
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
+
 \lstset{frame=tb,
     language=java,
     aboveskip=3mm,
@@ -48,15 +49,22 @@
     stringstyle=\color{mauve},
     breaklines=true,
     breakatwhitespace=true,
-    tabsize=2
+    tabsize=2,
     numbersep=5pt,
-    numbers=left,
-}
+    %numbers=left
+   }
+
+
 % For labeling sub figures
 \usepackage{subfigure}
 
 \addbibresource{PE_Lab.bib}
 \pgfplotsset{compat=1.18}
+
+
+
+
+
 
 \title{Semesterprojekt Physik Engines}
 \author{Kim Lan Vu, Michel Steiner, Asha Schwegler}
