@@ -4,9 +4,12 @@
 \contentsline {section}{\numberline {3}Physikalische Beschreibung der einzelnen Vorgänge}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Raketenantrieb\\}{4}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Elastischer Stoss}{4}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Inelastischer Stoss}{4}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}}{4}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Beschreibung der Implentierung inklusive Screenshots aus Unity}{4}{section.4}%
-\contentsline {section}{\numberline {5}Rückblick und Lehren aus dem Versuch}{4}{section.5}%
-\contentsline {section}{\numberline {6}Resultate mit grafischer Darstellung}{4}{section.6}%
-\contentsline {section}{\numberline {A}Anhang}{4}{appendix.A}%
+\contentsline {subsection}{\numberline {3.3}Inelastischer Stoss}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}}{5}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Beschreibung der Implentierung inklusive Screenshots aus Unity}{5}{section.4}%
+\contentsline {section}{\numberline {5}Rückblick und Lehren aus dem Versuch}{5}{section.5}%
+\contentsline {section}{\numberline {6}Resultate mit grafischer Darstellung}{5}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Elastisch}{5}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Inelastisch}{6}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Inelastisch}{7}{subsection.6.3}%
+\contentsline {section}{\numberline {A}Anhang}{7}{appendix.A}%
