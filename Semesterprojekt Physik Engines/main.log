@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.20)  22 APR 2023 23:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.20)  22 APR 2023 23:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1453,83 +1453,75 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-[2] (subfiles/Zusammenfassung.tex) (subfiles/AufbauDesExperiments.tex
-<./images/2Lab_2dPictureNr1.png, id=108, 1203.2955pt x 138.5175pt>
+[2] (subfiles/Zusammenfassung.tex) [3] (subfiles/AufbauDesExperiments.tex
+<./images/2Lab_2dPictureNr1.png, id=117, 1203.2955pt x 138.5175pt>
 File: ./images/2Lab_2dPictureNr1.png Graphic file (type png)
 <use ./images/2Lab_2dPictureNr1.png>
-Package pdftex.def Info: ./images/2Lab_2dPictureNr1.png  used on input line 16.
+Package pdftex.def Info: ./images/2Lab_2dPictureNr1.png  used on input line 17.
 
 (pdftex.def)             Requested size: 441.01772pt x 50.76665pt.
-<./images/2Lab_2dPictureNr2.png, id=111, 1203.2955pt x 142.73325pt>
+<./images/2Lab_2dPictureNr2.png, id=120, 1203.2955pt x 142.73325pt>
 File: ./images/2Lab_2dPictureNr2.png Graphic file (type png)
 <use ./images/2Lab_2dPictureNr2.png>
-Package pdftex.def Info: ./images/2Lab_2dPictureNr2.png  used on input line 25.
+Package pdftex.def Info: ./images/2Lab_2dPictureNr2.png  used on input line 26.
 
 (pdftex.def)             Requested size: 441.01772pt x 52.31172pt.
-<./images/2Lab_2dPictureNr3.png, id=113, 1305.07574pt x 158.994pt>
+<./images/2Lab_2dPictureNr3.png, id=122, 1305.07574pt x 158.994pt>
 File: ./images/2Lab_2dPictureNr3.png Graphic file (type png)
 <use ./images/2Lab_2dPictureNr3.png>
-Package pdftex.def Info: ./images/2Lab_2dPictureNr3.png  used on input line 35.
+Package pdftex.def Info: ./images/2Lab_2dPictureNr3.png  used on input line 36.
 
 (pdftex.def)             Requested size: 441.01772pt x 53.7273pt.
 )
-(subfiles/PhysikalischeBeschreibung.tex [3
+[4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.14 \subsubsection
-                   {Konstante Kraft}
+l.91 \newpage
+             
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.14 \subsubsection
-                   {Konstante Kraft}
+l.91 \newpage
+             
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.14 \subsubsection
-                   {Konstante Kraft} <./images/2Lab_2dPictureNr1.png> <./images
-/2Lab_2dPictureNr2.png> <./images/2Lab_2dPictureNr3.png>] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 44--48
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
-
- []
-
+l.91 \newpage
+              <./images/2Lab_2dPictureNr1.png> <./images/2Lab_2dPictureNr2.png>
+ <./images/2Lab_2dPictureNr3.png>] (subfiles/PhysikalischeBeschreibung.tex
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
 
  []
 
-) (subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--17
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--17
-
- []
-
-[6]) (subfiles/Rueckblick und Lehren aus dem Versuch.tex)
+) [7]
+(subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex
+<./images/2Lab_ExperimentOverview.png, id=167, 989.49675pt x 501.072pt>
+File: ./images/2Lab_ExperimentOverview.png Graphic file (type png)
+<use ./images/2Lab_ExperimentOverview.png>
+Package pdftex.def Info: ./images/2Lab_ExperimentOverview.png  used on input li
+ne 7.
+(pdftex.def)             Requested size: 441.01772pt x 223.33186pt.
+)
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.97 \newpage
+              <./images/2Lab_ExperimentOverview.png>] [9]
+(subfiles/Rueckblick und Lehren aus dem Versuch.tex) [10]
 (subfiles/ResultateMitGrafischerDarstellung.tex
-<./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.png, id=159, 385.44pt x 1
+<./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.png, id=184, 385.44pt x 1
 08.405pt>
 File: ./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.png Graphic file (ty
 pe png)
@@ -1537,60 +1529,60 @@ pe png)
 Package pdftex.def Info: ./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.p
 ng  used on input line 15.
 (pdftex.def)             Requested size: 441.01772pt x 124.0362pt.
-<./images/Elastisch/OrtAlsFunktionDerZeit.png, id=160, 1171.37625pt x 298.11375
+<./images/Elastisch/OrtAlsFunktionDerZeit.png, id=185, 1171.37625pt x 298.11375
 pt>
 File: ./images/Elastisch/OrtAlsFunktionDerZeit.png Graphic file (type png)
 <use ./images/Elastisch/OrtAlsFunktionDerZeit.png>
 Package pdftex.def Info: ./images/Elastisch/OrtAlsFunktionDerZeit.png  used on 
 input line 23.
 (pdftex.def)             Requested size: 441.01772pt x 112.23816pt.
-<./images/Inelastisch/GesamtImpluls.png, id=163, 1182.4175pt x 298.11375pt>
+<./images/Inelastisch/GesamtImpluls.png, id=188, 1182.4175pt x 298.11375pt>
 File: ./images/Inelastisch/GesamtImpluls.png Graphic file (type png)
 <use ./images/Inelastisch/GesamtImpluls.png>
 Package pdftex.def Info: ./images/Inelastisch/GesamtImpluls.png  used on input 
 line 37.
 (pdftex.def)             Requested size: 441.01772pt x 111.18738pt.
- [7
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+ [11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.42 
      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.42 
       <./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.png> <./images/Elas
 tisch/OrtAlsFunktionDerZeit.png>]
-<./images/Inelastisch/ImpulsJulia.png, id=175, 393.47pt x 279.0425pt>
+<./images/Inelastisch/ImpulsJulia.png, id=199, 393.47pt x 279.0425pt>
 File: ./images/Inelastisch/ImpulsJulia.png Graphic file (type png)
 <use ./images/Inelastisch/ImpulsJulia.png>
 Package pdftex.def Info: ./images/Inelastisch/ImpulsJulia.png  used on input li
 ne 45.
 (pdftex.def)             Requested size: 441.01772pt x 312.75964pt.
-<./images/Inelastisch/ImpulsRomeo.png, id=176, 1171.37625pt x 298.11375pt>
+<./images/Inelastisch/ImpulsRomeo.png, id=200, 1171.37625pt x 298.11375pt>
 File: ./images/Inelastisch/ImpulsRomeo.png Graphic file (type png)
 <use ./images/Inelastisch/ImpulsRomeo.png>
 Package pdftex.def Info: ./images/Inelastisch/ImpulsRomeo.png  used on input li
 ne 53.
 (pdftex.def)             Requested size: 441.01772pt x 112.23816pt.
- [8
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+ [12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.58 
      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.58 
       <./images/Inelastisch/GesamtImpluls.png> <./images/Inelastisch/ImpulsJuli
 a.png>]
-<./images/Inelastisch/OrtJuliaAlsFunktionDerZeit.png, id=184, 1197.47375pt x 29
+<./images/Inelastisch/OrtJuliaAlsFunktionDerZeit.png, id=208, 1197.47375pt x 29
 8.11375pt>
 File: ./images/Inelastisch/OrtJuliaAlsFunktionDerZeit.png Graphic file (type pn
 g)
@@ -1598,25 +1590,19 @@ g)
 Package pdftex.def Info: ./images/Inelastisch/OrtJuliaAlsFunktionDerZeit.png  u
 sed on input line 61.
 (pdftex.def)             Requested size: 441.01772pt x 109.79088pt.
-<./images/Inelastisch/GeschwindigkeitRomeo.png, id=185, 385.44pt x 108.405pt>
+<./images/Inelastisch/GeschwindigkeitRomeo.png, id=209, 385.44pt x 108.405pt>
 File: ./images/Inelastisch/GeschwindigkeitRomeo.png Graphic file (type png)
 <use ./images/Inelastisch/GeschwindigkeitRomeo.png>
 Package pdftex.def Info: ./images/Inelastisch/GeschwindigkeitRomeo.png  used on
  input line 69.
 (pdftex.def)             Requested size: 441.01772pt x 124.0362pt.
-<./images/Inelastisch/GeschwindigkeitJulia.png, id=186, 385.44pt x 108.405pt>
+<./images/Inelastisch/GeschwindigkeitJulia.png, id=210, 385.44pt x 108.405pt>
 File: ./images/Inelastisch/GeschwindigkeitJulia.png Graphic file (type png)
 <use ./images/Inelastisch/GeschwindigkeitJulia.png>
 Package pdftex.def Info: ./images/Inelastisch/GeschwindigkeitJulia.png  used on
  input line 77.
 (pdftex.def)             Requested size: 441.01772pt x 124.0362pt.
- [9
-pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.82 
-     
+ [13
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1628,22 +1614,28 @@ as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.82 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.82 
       <./images/Inelastisch/ImpulsRomeo.png> <./images/Inelastisch/OrtJuliaAlsF
 unktionDerZeit.png> <./images/Inelastisch/GeschwindigkeitRomeo.png>]
-<./images/Inelastisch/Endgeschwindigkeit.png, id=197, 377.41pt x 108.405pt>
+<./images/Inelastisch/Endgeschwindigkeit.png, id=222, 377.41pt x 108.405pt>
 File: ./images/Inelastisch/Endgeschwindigkeit.png Graphic file (type png)
 <use ./images/Inelastisch/Endgeschwindigkeit.png>
 Package pdftex.def Info: ./images/Inelastisch/Endgeschwindigkeit.png  used on i
 nput line 87.
 (pdftex.def)             Requested size: 441.01772pt x 126.67618pt.
-) [10
-pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
+) [14
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.103 \newpage
               
-pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -2366,7 +2358,7 @@ l.55     }
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[11]
+[15]
 
 ..//UnityProj/Assets/CubeController.cs:55: Package xcolor Error: Undefined colo
 r `codegrey'.
@@ -3031,7 +3023,7 @@ l.104         WriteInelasticTimeSeriesToCsv(
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[12]
+[16]
 
 ..//UnityProj/Assets/CubeController.cs:105: Package xcolor Error: Undefined col
 or `codegrey'.
@@ -3795,7 +3787,7 @@ l.162             joint.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[13]
+[17]
 
 ..//UnityProj/Assets/CubeController.cs:165: Package xcolor Error: Undefined col
 or `codegrey'.
@@ -4388,7 +4380,7 @@ l.5 df
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[14]
+[18]
 
 ..//UnityProj/graphInelastic.py:5: Package xcolor Error: Undefined color `codeg
 rey'.
@@ -5195,7 +5187,7 @@ l.65 plt.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[15]
+[19]
 
 ..//UnityProj/graphInelastic.py:66: Package xcolor Error: Undefined color `code
 grey'.
@@ -5391,11 +5383,11 @@ l.80 plt.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-)) [16] (main.lof)
+)) [20] (main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [17] [18] (main.aux)
+ [21] [22] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 45F5DA75FC159DEAFBF880A250F36C74;1498.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -5403,10 +5395,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44208 strings out of 476331
- 988511 string characters out of 5787765
- 2030925 words of memory out of 5000000
- 63592 multiletter control sequences out of 15000+600000
+ 44228 strings out of 476331
+ 989049 string characters out of 5787765
+ 2030954 words of memory out of 5000000
+ 63605 multiletter control sequences out of 15000+600000
  521598 words of font info for 68 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  99i,7n,94p,723b,2209s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -5428,9 +5420,9 @@ ublic/amsfonts/cm/cmsy10.pfb><C:/Users/miche/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/miche/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/miche/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on C:/Workarea\PE_Lab\out\main.pdf (18 pages, 973455 bytes).
+Output written on C:/Workarea\PE_Lab\out\main.pdf (22 pages, 1325392 bytes).
 PDF statistics:
- 682 PDF objects out of 1000 (max. 8388607)
- 343 named destinations out of 1000 (max. 500000)
- 209 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 709 PDF objects out of 1000 (max. 8388607)
+ 349 named destinations out of 1000 (max. 500000)
+ 222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
