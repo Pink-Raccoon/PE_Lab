@@ -70,7 +70,7 @@
     \begin{lstinputlisting}[label={lst:graphInelastic}, firstline=49, lastline=50]
     {..//UnityProj/Assets/CubeController.cs}
     \end{lstinputlisting}
-    Es wird auch die Position gespeichert, welche Romeo zum ersten Mal besitzt, wenn er auf die Feder auftrifft (springMaxDeviation) wie in Abbildung \ref{fig:2Lab_SpringDeviation} rot markiert ist.
+    Es wird auch die Position ermittelt, welche Romeo zum ersten Mal besitzt, wenn er auf die Feder auftrifft (springMaxDeviation) wie in Abbildung \ref{fig:2Lab_SpringDeviation} rot markiert ist.
     \begin{lstinputlisting}[label={lst:graphInelastic}, firstline=51, lastline=52]
     {..//UnityProj/Assets/CubeController.cs}
     \end{lstinputlisting}
@@ -86,8 +86,10 @@
     Danach werden die Timeseries Listen deklariert, für die CSV Dateien. Das Hinzufügen der Werte passiert kontinuierlich in der Methode FixedUpdate.
     \newline
     In FixedUpdate gibt es zwei If-Bedingungen. Die erste ist zum Hinzufügen der konstanten Kraft mit der Methode .AddForce bis die Beschleunigunszeit vorüber ist.
-    Die zweite If-Bedingung ist zur Überprüfung, ob Romeo die Feder berührt. Dafür muss die Position der rechten Kante von Romeo berechnet werden und mit der springMaxDeviation verglichen werden.
-
+    Die zweite If-Bedingung ist zur Überprüfung, ob Romeo die Feder berührt. Dafür muss die Position der rechten Kante von Romeo berechnet werden und mit der
+    springMaxDeviation verglichen werden.
+    Für den inelastischen Stoss wird die Komponente FixedJoint in der Methode OnCollision implementiert. So bleiben Romeo und Julia  nach ihrer
+    Kollision zusammen und gleiten gemeinsam in den Sonnenuntergang.
 
 
 \end{document}
