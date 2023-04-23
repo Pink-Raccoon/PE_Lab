@@ -9,6 +9,7 @@ plt.plot(df["currentTimeStep"], df[" cubeRomeo.position.x"])
 plt.ylabel("[s] = m")
 plt.xlabel("[t] = s")
 plt.title("Ort als Funktion der Zeit")
+plt.savefig('../Semesterprojekt Physik Engines/images/Elastisch/OrtAlsFunktionDerZeit.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 
@@ -17,6 +18,7 @@ plt.plot(df["currentTimeStep"], df[" cubeRomeo.velocity.x"])
 plt.ylabel("[v] = m/s")
 plt.xlabel("[t] = s")
 plt.title("Geschwindigkeit als Funktion der Zeit")
+plt.savefig('../Semesterprojekt Physik Engines/images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 
