@@ -32,7 +32,8 @@ public class CubeController : MonoBehaviour
     double accelarationTime = 1.0;
     float springConstant = 0f;
     float springMaxDeviation = 0f;
-    float springContraction = 1.3f;
+    float springContraction = 1.7f;
+    float springLength = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -42,13 +43,11 @@ public class CubeController : MonoBehaviour
         timeSeriesElasticCollision = new List<List<float>>();
         timeSeriessInelasticCollision = new List<List<float>>();
 
-        //Maximale Auslenkung gerechnet anhand der linken seite des Feders
-        springMaxDeviation = spring.transform.position.x - spring.transform.localScale.y/2;
-        // Energieerhaltungsgesetz kinEnergie = PotEnergie : 1/2*m*v^2 = 1/2k * x^2
-        springConstant = (float)((cubeRomeo.mass * Math.Pow(2.0, 2)) / (Math.Pow(springContraction, 2.0)));
+
+        springLength = spring.GetComponent<MeshFilter>().mesh.bounds.size.y * spring.transform.localScale.y;
 
         //Maximale Auslenkung gerechnet anhand der linken seite des Feders
-        springMaxDeviation = spring.transform.position.x - spring.transform.localScale.y/2;
+        springMaxDeviation = spring.transform.position.x - springLength / 2;
          // Energieerhaltungsgesetz kinEnergie = PotEnergie : 1/2*m*v^2 = 1/2k * x^2
         springConstant = (float)((cubeRomeo.mass * Math.Pow(2.0, 2)) / (Math.Pow(springContraction, 2.0)));
 
