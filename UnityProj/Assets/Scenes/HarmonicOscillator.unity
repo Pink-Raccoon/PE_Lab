@@ -195,6 +195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 553091567}
   - component: {fileID: 553091566}
+  - component: {fileID: 553091568}
   m_Layer: 0
   m_Name: RopeRomeo
   m_TagString: Untagged
@@ -217,7 +218,7 @@ MonoBehaviour:
   partPrefab: {fileID: 6162730421519756589, guid: 364d0d82c0cc8144bb31acf3297c5517,
     type: 3}
   parentObject: {fileID: 1105879375}
-  length: 5
+  length: 7
   partDistance: 0.21
   reset: 0
   spawn: 1
@@ -238,6 +239,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &553091568
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553091565}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,6 +886,8 @@ MonoBehaviour:
   cubeRomeo: {fileID: 1377017608}
   cubeJulia: {fileID: 1842126575}
   spring: {fileID: 860254589}
+  RopeRomeo: {fileID: 0}
+  RopeJulia: {fileID: 0}
 --- !u!1 &1494889945
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +898,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1494889947}
   - component: {fileID: 1494889946}
+  - component: {fileID: 1494889948}
   m_Layer: 0
   m_Name: RopeJulia
   m_TagString: Untagged
@@ -901,7 +921,7 @@ MonoBehaviour:
   partPrefab: {fileID: 6162730421519756589, guid: 364d0d82c0cc8144bb31acf3297c5517,
     type: 3}
   parentObject: {fileID: 1105879375}
-  length: 5
+  length: 7
   partDistance: 0.21
   reset: 0
   spawn: 1
@@ -922,6 +942,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1494889948
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494889945}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1613095875
 GameObject:
   m_ObjectHideFlags: 0
