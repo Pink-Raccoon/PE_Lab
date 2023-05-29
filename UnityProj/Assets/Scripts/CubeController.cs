@@ -247,8 +247,8 @@ public class CubeController : MonoBehaviour
     {
         
         
-        var ropeCubeRomeo = Romeo.position -ropeRomeo.transform.position ; 
-        alphaRomeo = (float)Math.Atan2(ropeCubeRomeo.x , ropeCubeRomeo.y);
+        var ropeCubeRomeo = ropeRomeo.transform.position - Romeo.position; 
+        alphaRomeo = (float)Math.Atan2(ropeCubeRomeo.y , ropeCubeRomeo.x);
         Debug.Log("alphaRomeo is:" + alphaRomeo);
 
         //Radial Gravity Rope Romeo
@@ -271,8 +271,8 @@ public class CubeController : MonoBehaviour
 
         //Julia
 
-        var ropeCubeJulia = Julia.position - ropeJulia.transform.position;
-        alphaJulia =(float) Math.Atan2(ropeCubeJulia.x , ropeCubeJulia.y);
+        var ropeCubeJulia = ropeJulia.transform.position - Julia.position;
+        alphaJulia =(float) Math.Atan2(ropeCubeJulia.y , ropeCubeJulia.x);
         Debug.Log("alphaJulia is:" + alphaJulia);
         //Radial Gravity Rope Romeo
         var radialGravityRopeJulia = Julia.mass * g * Math.Cos(alphaJulia);
@@ -286,6 +286,8 @@ public class CubeController : MonoBehaviour
         var verticalForceJulia = radialGravityRopeJulia + centriPedalForceJulia * Math.Cos(alphaJulia);
 
         var centripedalForceJulia = new Vector3((float)horizonForceJulia, (float)verticalForceJulia, 0.0f);
+        var magnitudeCentripedalJulia = centripedalForceJulia.magnitude;
+
         Julia.AddForce(centripedalForceJulia+frictionForceJulia);
         var forceJ = centripedalForceJulia + frictionForceJulia;
         Debug.Log("swing julia" + (centripedalForceJulia+ frictionForceJulia));
