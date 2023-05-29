@@ -261,10 +261,11 @@ public class CubeController : MonoBehaviour
         var normalizedVelocityRomeo = Romeo.velocity.normalized;
         var frictionForceRomeo = (float)(-0.5 * areaRomeo * constantAirFriction * cCube * Math.Pow(Romeo.velocity.x, 2.0f)) * normalizedVelocityRomeo;
         Vector3 centripedalForceRomeo = new Vector3((float)FH, (float)FV, 0.0f);
-        //Destroy(gameObject.GetComponent<FixedJoint>());
+        
         Romeo.AddForce(centripedalForceRomeo + frictionForceRomeo);
         var force = centripedalForceRomeo + frictionForceRomeo;
         Debug.Log("swing Romeo" + (centripedalForceRomeo +frictionForceRomeo));
+
         currentTimeStep += Time.deltaTime;
         timeSeriessRopeSwingRomeo.Add(new List<float>() { currentTimeStep, Romeo.position.x, Romeo.position.y, alphaRomeo, (float)FH, (float)FV, force.x, force.y, force.z });
 
@@ -274,6 +275,7 @@ public class CubeController : MonoBehaviour
         var ropeCubeJulia = ropeJulia.transform.position - Julia.position;
         alphaJulia =(float) Math.Atan2(ropeCubeJulia.y , ropeCubeJulia.x);
         Debug.Log("alphaJulia is:" + alphaJulia);
+
         //Radial Gravity Rope Romeo
         var radialGravityRopeJulia = Julia.mass * g * Math.Cos(alphaJulia);
         //Centripedal force
@@ -281,7 +283,6 @@ public class CubeController : MonoBehaviour
         //Turbulent viskose Friction
         var normalizedVelocityJuia = Julia.velocity.normalized;
         var frictionForceJulia = (float)(-0.5 * areaJulia * constantAirFriction * cCube * Mathf.Pow(Julia.velocity.x, 2.0f)) * normalizedVelocityJuia;
-
         var horizonForceJulia = radialGravityRopeJulia + centriPedalForceJulia * Math.Sin(alphaJulia);
         var verticalForceJulia = radialGravityRopeJulia + centriPedalForceJulia * Math.Cos(alphaJulia);
 
