@@ -49,7 +49,7 @@ public class SwingJulia : MonoBehaviour
         var FH = (FG + FZ) * Math.Sin(alphaJulia);
         var FV = (FG + FZ) * Math.Cos(alphaJulia);
         var centripedalForceJulia = new Vector3((float)FH, (float)FV, 0.0f) ;
-        var forceJ = centripedalForceJulia  + FR;
+        var forceJ = centripedalForceJulia;
         Julia.AddForce(forceJ);
         var degree = ConvertRadiansToDegrees(alphaJulia);
         cubeJuliaTimeStep += Time.deltaTime;

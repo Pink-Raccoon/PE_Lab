@@ -9,8 +9,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-df_rom = pd.read_csv("./TimeSeries/timeSeriesRopeRomeo.csv")
-df_jul = pd.read_csv("./TimeSeries/timeSeriesRopeJulia.csv")
+df_rom = pd.read_csv("./timeSeriesRopeRomeo.csv")
+df_jul = pd.read_csv("./timeSeriesRopeJulia.csv")
 
 #plt.figure(figsize=(20,20))
 plt.plot(df_rom[" cubeRomeo.position.x"], df_rom[" cubeRomeo.position.y"], label="Romeo")
@@ -32,12 +32,3 @@ plt.title("Auslenkung in Grad als Funktion der Zeit")
 plt.savefig('../Semesterprojekt Physik Engines/images/ropeJulia/AuslenkungDeg.png', dpi=300, bbox_inches='tight')
 plt.show()
 
-
-#%%
-#plt.figure(figsize=(20,20))
-plt.plot(df[" alphaJulia"], df["currentTimeStep"])
-plt.ylabel("[t] = s")
-plt.xlabel("[s] = alpha")
-plt.title("Auslenkung in Rad als Funktion der Zeit")
-plt.savefig('../Semesterprojekt Physik Engines/images/ropeJulia/Auslenkung.png', dpi=300, bbox_inches='tight')
-plt.show()

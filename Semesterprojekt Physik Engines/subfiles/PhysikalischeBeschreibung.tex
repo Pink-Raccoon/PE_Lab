@@ -115,12 +115,12 @@ Neben den bestehenden bekannten Grössen aus Versuch Lab 2 kommen folgende Grös
 	\item $c_w$ = 1.1
 	\item $\rho_{Luft}$ = $1.2kg/m^3$
 	\item g = $9.81 m/s^2$
-	\item A = Stirnfläche Würfel = 1.5*1.5 = 2.25
+	\item A = Stirnfläche Würfel = 1.5*1.5 = 2.25 \newline
 In den folgenden Beispielrechnungen werden die Zahlen genommen für den Würfel Romeo, wobei dasselbe gilt für den Würfel Julia. 	Hinzukommnt, dass in C\# die Cosinus, Sinus und Arctangens im Bogenmass berechnet werden, also werden sie in diesem Kapitel auch so aufgeführt.
 \end{itemize}
      \begin{figure}[H]
                \begin{center}
-                   \centerline{\includegraphics[width=155mm]{./images/Lab3Unity/KraeftePendel.png}}
+                   \centerline{\includegraphics[width=100mm]{./images/Lab3Unity/KraeftePendel.png}}
                    \caption{Kräfte auf eine Pendelmasse \cite{tiplerpaula.PhysikFurStudierende}}
                    \label{fig:Pendel}
                \end{center}
@@ -135,8 +135,8 @@ $F_g = m * g * cos(\alpha)$
 $F_g = 2 * 9.81 * cos(0) = 19.62N$
 \end{mdframed}
 \subsubsection{Zentripetalkraft}
-Diese Kraft ist dem radialen Vektor entgegengesetzt,vorausgesetzt dieser Vektor zeigt vom Kreismittelpunkt nach aussen. Die positive Richtung zeigt demnach nach innen. Diese Kraft ist die Komponente vom resultierenden Kraft, die Senkrecht zur Schwingung steht und zum Mittelpunkt weist. In diesem Fall wird sie durch die Gravatationskraft und die Reibungskraft hervorgerufen und ist somit keine eigenständige neue Kraft.
-Die Zetriptalkraft hat die allgemeine Formel \cite{tiplerpaula.PhysikFurStudierende}:
+Diese Kraft ist dem radialen Vektor entgegengesetzt, vorausgesetzt dieser Vektor zeigt vom Kreismittelpunkt nach aussen. Die positive Richtung zeigt demnach nach innen. Diese Kraft ist die Komponente vom resultierenden Kraft, die Senkrecht zur Schwingung steht und zum Mittelpunkt weist. In diesem Fall wird sie durch die Gravitationskraft und die Reibungskraft hervorgerufen und ist somit keine eigenständige neü Kraft.
+Die Zentriptalkraft hat die allgemeine Formel \cite{tiplerpaula.PhysikFurStudierende}:
 \begin{mdframed}
 $F_z=m * \frac{v^2}{R} $
 \end{mdframed}
@@ -144,23 +144,22 @@ $F_z=m * \frac{v^2}{R} $
 \begin{mdframed}
 $F_z = 2 * \frac{1.004936^2}{6} = 0.17N$
 \end{mdframed}
-Wie erwähnt, hängt die Zentripetal Kraft von mehreren Kompenenten ab, in der horizontalen Richtung und in der vertikalen Richtung. Aus diesem Grund werden die horizontalen und vertikalen Komponenten aus den Ortsvektoren zu x und y der Zentripetalkraft zur Gewichtskraft addiert und dann jeweils gemäss der Lehre der Trigonometrie multipliziert mit dem Sinus oder Cosinus des Winkels. Die folgelnde Skizze stellt den Sachverhalt dar:
-     \begin{figure}[H]
+Wie bereits erwähnt, hängt die Zentripetalkraft von mehreren Komponenten ab, sowohl in horizontaler als auch in vertikaler Richtung. Um dies zu berücksichtigen, werden die horizontalen und vertikalen Komponenten der Ortsvektoren zur Zentripetalkraft mit den entsprechenden Komponenten der Gewichtskraft addiert. Anschliessend werden sie gemäss den Regeln der Trigonometrie mit dem Sinus oder Cosinus des Winkels multipliziert. Die folgende Skizze veranschaulicht diesen Sachverhalt:     \begin{figure}[H]
                \begin{center}
-                   \centerline{\includegraphics[width=155mm]{./images/Lab3Unity/KraefteDiagramm.png}}
+                   \centerline{\includegraphics[width=100mm]{./images/Lab3Unity/KraefteDiagramm.png}}
                    \caption{Kräftediagramm Skizze}
                    \label{fig:KräfteDiagramm}
                \end{center}
      \end{figure}
 \begin{mdframed}
 $H = F_z +F_g$\\\\
-$arctan(\alpha)$ = $\frac{Aufhaengepunktseil.x-Position Wuerfel.x }{Aufhaengepunktseil.y-Position Wuerfel.y }$\\\\
+$arctan(\alpha)$ = $\frac{Aufhängepunktseil.x-Position Würfel.x }{Aufhängepunktseil.y-Position Würfel.y }$\\\\
 $\frac{A}{H}= cos(\alpha) \rightarrow A = (F_z + F_g) * cos(\alpha)= F_v$\\\\
 $\frac{G}{H}= sin(\alpha) \rightarrow G = (F_z + F_g) * sin(\alpha)= F_h$\\\\
 $Kraftvektor: (Fh,Fv,0)$
 \end{mdframed}
 \textbf {Aus dem Versuch:\\}
-Aufhaengepunktseil so gewaehlt dass Betrag des Vektors 6 ergibt, und bei Winkel 0 also steht der Wuerfel direkt unter dem Aufhaengepunkt, so ergibt es fuer x und z Koordinaten des Differenzvektors null, und zu y vom Aufhaengepunkt 6 dazu addieren.\\
+Aufhängepunktseil so gewählt dass Betrag des Vektors 6 ergibt, und bei Winkel 0 also steht der Würfel direkt unter dem Aufhängepunkt, so ergibt es für x und z Koordinaten des Differenzvektors null, und zu y vom Aufhängepunkt 6 dazu addieren.\\
 Position Würfel = $(-20.01,5.04,-1.5)$\\
 Aufhängepunkt = $(-20.01,11.04,-1.5)$\\
 Differenzvektor = $(0,6,0)$\\
@@ -172,8 +171,7 @@ $\frac{G}{H}= sin(0) \rightarrow G = (0.17N +19.62N) * sin(0)= 0$\\\\
 $Kraftvektor: (19.77,0,0)$
 \end{mdframed}
 \subsubsection{Reibungskraft}
-Gemäss Aufgabenstellung widerfährt den Würfeln noch eine turbulente viskose Reibungskraft.Die Dampfüng wird durch die Reibungskraft verursacht, denn diese entzieht dem schwingendem System mechanische Energie, die wiederum in Wärmeenergie dissipiert. Diese Kraft errechnet sich aus der Formel:
-\begin{mdframed}
+Gemäss der Aufgabenstellung wirken auf die Würfel noch turbulente viskose Reibungskräfte. Diese Reibungskräfte führen zur Dämpfung des schwingenden Systems, da sie dem System mechanische Energie entziehen, die in Form von Wärmeenergie dissipiert wird. Die Berechnung dieser Kraft erfolgt mithilfe der folgenden Formel:\begin{mdframed}
 $F_r = -0.5 * A*\rho_{Luft}*c_w*v^2*\vec{e_v}$
 \end{mdframed}
 \textbf {Aus dem Versuch:}

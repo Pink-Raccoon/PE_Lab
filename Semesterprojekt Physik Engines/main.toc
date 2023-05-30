@@ -9,20 +9,20 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Elastischer Stoss}{7}{subsubsection.3.1.2}%
 \contentsline {subsubsection}{\numberline {3.1.3}Inelastischer Stoss}{8}{subsubsection.3.1.3}%
 \contentsline {subsection}{\numberline {3.2}Teil 3: Beide Würfel schwingen gedämpft}{8}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Radialer Anteil der Gewichtskraft}{8}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Zentripetalkraf}{8}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Reibungskraft}{8}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Resultierende Kraft}{8}{subsubsection.3.2.4}%
-\contentsline {section}{\numberline {4}Beschreibung der Implentierung inklusive Screenshots aus Unity}{9}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Lab 2: Würfel bewegt sich und stösst}{9}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Lab 3: Beide Würfel schwingen gedämpft}{12}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Resultate mit grafischer Darstellung}{14}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Lab 2}{14}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Lab 3}{16}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Rückblick und Lehren aus dem Versuch}{18}{section.6}%
-\contentsline {section}{\numberline {A}Anhang}{19}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Code für das Lab 2 und 3}{19}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Code für die Datenaufbereitung des Elastischen Stosses des Lab 2}{40}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}Code für die Datenaufbereitung des Inelastischen Stosses des Lab 2}{41}{subsection.A.3}%
-\contentsline {subsection}{\numberline {A.4}Code für die Datenaufbereitung des Schwunges von Julia des Lab 3}{43}{subsection.A.4}%
-\contentsline {subsection}{\numberline {A.5}Code für die Datenaufbereitung des Schwunges von Romeo des Lab 3}{44}{subsection.A.5}%
+\contentsline {subsubsection}{\numberline {3.2.1}Radialer Anteil der Gewichtskraft}{9}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Zentripetalkraft}{9}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Reibungskraft}{11}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Resultierende Kraft}{11}{subsubsection.3.2.4}%
+\contentsline {section}{\numberline {4}Beschreibung der Implentierung inklusive Screenshots aus Unity}{12}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Lab 2: Würfel bewegt sich und stösst}{12}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Lab 3: Beide Würfel schwingen gedämpft}{15}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Resultate mit grafischer Darstellung}{17}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Lab 2}{17}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Lab 3}{19}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Rückblick und Lehren aus dem Versuch}{21}{section.6}%
+\contentsline {section}{\numberline {A}Anhang}{22}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Code für das Lab 2 und 3}{22}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Code für die Datenaufbereitung des Elastischen Stosses des Lab 2}{43}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Code für die Datenaufbereitung des Inelastischen Stosses des Lab 2}{44}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Code für die Datenaufbereitung des Schwunges von Julia des Lab 3}{46}{subsection.A.4}%
+\contentsline {subsection}{\numberline {A.5}Code für die Datenaufbereitung des Schwunges von Romeo des Lab 3}{46}{subsection.A.5}%
