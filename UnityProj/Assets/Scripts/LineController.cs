@@ -29,7 +29,7 @@ public class LineController : MonoBehaviour
         lineRenderer.positionCount = cubeTransforms.Length;
         for (int i = 0; i < cubeTransforms.Length; i++)
         {
-            if (cubeTransforms[0].position.x <= -20.01f)
+            if (cubeTransforms[1].position.x <= -20.01f)
             {
                 if (firstRun)
                 {
@@ -40,6 +40,8 @@ public class LineController : MonoBehaviour
                 }
                 
                 lineRenderer.SetPosition(i, cubeTransforms[i].position);
+                Debug.Log($"i:{i},trans.pos:{cubeTransforms[i].position}");
+                Debug.Log($"linerend pos {lineRenderer.GetPosition(i)}");
                
             }
         }

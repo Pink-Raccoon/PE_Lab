@@ -36,7 +36,8 @@ public class SwingRomeo : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        double currentTime = Time.fixedTimeAsDouble - startime;
+        currentTimeStep += Time.deltaTime;
+
     }
 
 
@@ -49,7 +50,8 @@ public class SwingRomeo : MonoBehaviour
     {
         var ropeCubeRomeo = Romeo.position - connectedPos; // Endpunkt - Anfangspunkt
         Debug.Log("diff " + ropeCubeRomeo);
-        alphaRomeo = (float)Math.Atan(ropeCubeRomeo.x / ropeCubeRomeo.y);
+        //alphaRomeo = (float)Math.Atan(ropeCubeRomeo.x / ropeCubeRomeo.y);
+        alphaRomeo = (float)Math.Atan((Romeo.position.x - connectedPos.x) / (Romeo.position.y - connectedPos.y));
         Debug.Log("alpha " + alphaRomeo);
         var FG = Romeo.mass * g.magnitude * Math.Cos(alphaRomeo);
         var FZ = Romeo.mass * (Math.Pow(Romeo.velocity.magnitude, 2.0f)) / (R);
@@ -60,9 +62,9 @@ public class SwingRomeo : MonoBehaviour
         var centripedalForceRomeo = new Vector3((float)FH, (float)FV, 0.0f) ;
         var force = centripedalForceRomeo + FR;
         Romeo.AddForce(force);
-
-        currentTimeStep += Time.deltaTime;
-        timeSeriessRopeSwingRomeo.Add(new List<float>() { currentTimeStep, Romeo.position.x, Romeo.position.y, alphaRomeo, (float)FH, (float)FV, force.x, force.y, force.z });
+        var degree = ConvertRadiansToDegrees(alphaRomeo);
+        //currentTimeStep += Time.deltaTime;
+        timeSeriessRopeSwingRomeo.Add(new List<float>() { currentTimeStep, Romeo.position.x, Romeo.position.y, alphaRomeo, (float)degree, (float)FH, (float)FV, force.x, force.y, force.z });
 
     }
 
@@ -74,7 +76,7 @@ public class SwingRomeo : MonoBehaviour
     {
         using (var streamWriter = new StreamWriter("timeSeriesRopeRomeo.csv"))
         {
-            streamWriter.WriteLine("currentTimeStep, cubeRomeo.position.x, cubeRomeo.position.y,alphaRomeo,horizonForceRomeo,verticalForceRomeo,-frictionForceRomeo.x + horizonForceRomeo, -frictionForceRomeo.y + verticalForceRomeo");
+            streamWriter.WriteLine("currentTimeStep, cubeRomeo.position.x, cubeRomeo.position.y,alphaRomeo,degree,horizonForceRomeo,verticalForceRomeo,-frictionForceRomeo.x + horizonForceRomeo, -frictionForceRomeo.y + verticalForceRomeo");
 
             foreach (List<float> timeStep in timeSeriessRopeSwingRomeo)
             {
@@ -82,5 +84,11 @@ public class SwingRomeo : MonoBehaviour
                 streamWriter.Flush();
             }
         }
+    }
+
+    public static double ConvertRadiansToDegrees(double radians)
+    {
+        double degrees = (180 / Math.PI) * radians;
+        return (degrees);
     }
 }

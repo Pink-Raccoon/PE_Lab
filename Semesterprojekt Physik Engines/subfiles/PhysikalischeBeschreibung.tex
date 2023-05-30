@@ -17,17 +17,17 @@ Julia, diesmal passiert der Stoss inelastisch. Sämtliche Vorgänge erfolgen ohn
 \subsubsection{Konstante Kraft}
 Um die konstante Kraft zu berechnen nehmen wir die gewünschte Geschwindigkeit und berechnen damit die Beschleunigung,
 weil die Kraft sowohl von der Masse wie auch der Beschleunigung abhängt und
-gegeben ist durch die Formel\cite{tiplerpaula.PhysikFurStudierende}
+gegeben ist durch die Formel%\cite{tiplerpaula.PhysikFurStudierende}
 \begin{mdframed}
 		 $F = m*a$
 \end{mdframed}
-Um dieses Anfangwertproblems zu lösen leiten wir die Geschwindigkeit ab \cite{tiplerpaula.PhysikFurStudierende}:
+Um dieses Anfangwertproblems zu lösen leiten wir die Geschwindigkeit ab% \cite{tiplerpaula.PhysikFurStudierende}:
 \begin{mdframed}
 		 $\dot{v} = a$\\
 $2m*s^{-1} \rightarrow$  $-2m*s^{-2} \rightarrow$  $a = [\frac{2m}{s^{2}}]$
 \end{mdframed}
 Die Zeit, die gebraucht wird um den Würfel zu beschleunigen, wird durch folgende Formel
-beschrieben \cite{tiplerpaula.PhysikFurStudierende}:
+beschrieben %\cite{tiplerpaula.PhysikFurStudierende}:
 \begin{mdframed}
  $v=a*t \rightarrow$ $t=\frac{v}{a} \rightarrow$ $\frac{2m/s}{2m/s^{2}} = 1s$
 \end{mdframed}
@@ -40,9 +40,9 @@ erreicht wird, danach wird keine Kraft mehr hinzugefügt und Romeo gleitet auf d
 \newpage
 \subsubsection{Elastischer Stoss}
 Beim elastischen Stoss ist die kinetische Energie vom Stosspartner vor und nach der Kollision
-gleich \cite{tiplerpaula.PhysikFurStudierende}. Gemäss Auftrag wird die Federlänge und Federkonstante
+gleich %\cite{tiplerpaula.PhysikFurStudierende}. Gemäss Auftrag wird die Federlänge und Federkonstante
 so dimensioniert, dass der Würfel nicht auf die Wand trifft.
-Die kinetische Energie des Würfels wird mit folgender Formel berechnet \cite{tiplerpaula.PhysikFurStudierende}:
+Die kinetische Energie des Würfels wird mit folgender Formel berechnet %\cite{tiplerpaula.PhysikFurStudierende}:
 \begin{mdframed}
 $E_{kin_{Romeo}}=\frac{1}{2} * m * v^{2}$
 \end{mdframed}
@@ -55,11 +55,11 @@ Energie in Form von potentieller Energie, da sie zusammenngedrückt wird. Sobald
 stösst, wird diese Energie in eine kinetische zurückgewandelt.\newline
 Um die Federkonstante zu berechnen, nehmen wir die Tatsache der Energieerhaltung zu Nutze und
 setzen die ausgerechnete kinetische Energie gleich mit der potentiellen Energie der Feder.\newline
-Die Formel für die pontentielle Energie der Feder lautet\cite{tiplerpaula.PhysikFurStudierende}:
+Die Formel für die pontentielle Energie der Feder lautet%\cite{tiplerpaula.PhysikFurStudierende}:
 \begin{mdframed}
 $E_{pot_{Feder}}=\frac{1}{2} * k * x^{2}$
 \end{mdframed}
-Die Gleichsetzung der Energien, sieht folgendermassen aus\cite{tiplerpaula.PhysikFurStudierende}:
+Die Gleichsetzung der Energien, sieht folgendermassen aus%\cite{tiplerpaula.PhysikFurStudierende}:
 \begin{mdframed}
 $E_{kin_{Romeo}}=E_{pot_{Feder}}$\\\\
 $\frac{1}{2} * m * v^{2} = \frac{1}{2} * k * x^{2}$
@@ -76,20 +76,20 @@ Jetzt wo wir die Federkonstante und Länge haben, können wir einen langsamen St
 \newpage
 \subsubsection{Inelastischer Stoss}
 Beim vollständigen inelastischen Stoss, werden beide Stosspartner nach der Kollision verbunden sein und dieselbe
-Geschwindigkeit haben\cite{tiplerpaula.PhysikFurStudierende}. Die Formeln, die wir für diesen Vorgang brauchen sind,
+Geschwindigkeit haben %\cite{tiplerpaula.PhysikFurStudierende}. Die Formeln, die wir für diesen Vorgang brauchen sind,
 die der Impulse der beiden Körper:
 \begin{mdframed}
 $Impuls_{Romeo} = m_{Romeo}*v_{Romeo}$\\\\
 $Impuls_{Julia} = m_{Julia}*v_{Julia}$
 \end{mdframed}
  Bei diesem Vorgang wird ein Teil des Impulses von Romeo auf Julia übertragen. Der Gesamtimpuls bleibt erhalten vor
- und nach dem Stoss und wird durch den Impulserhaltungsatz beschrieben\cite{tiplerpaula.PhysikFurStudierende}:
+ und nach dem Stoss und wird durch den Impulserhaltungsatz beschrieben:%\cite{tiplerpaula.PhysikFurStudierende}:
 \begin{mdframed}
 $ m_{Romeo}*v_{Romeo} +  m_{Julia}*v_{Julia} = (m_{Romeo} + m_{Julia})*v_{Ende}$
 \end{mdframed}
 Die Endgeschwindigkeit ist die Geschwindigkeit, die beide Körper gemeinsam haben nach dem Stoss.\newline
 Die Relation zwischen der kinetischen Energie und des Impulses, können wir folgendermassen
-herleiten\cite{tiplerpaula.PhysikFurStudierende}:
+herleiten %\cite{tiplerpaula.PhysikFurStudierende}:
 \begin{mdframed}
 $E_{kin}=\frac{1}{2} * m * v^{2} = \frac{(mv)^{2}}{2m} = \frac{p^{2}}{2m}$
 \end{mdframed}
@@ -99,5 +99,27 @@ $E_{kin_{Ende}}=\frac{p^{2}}{2(m_{Romeo} + m_{Julia})} $
 \end{mdframed}
 
 \subsection{Teil 3: Beide Würfel schwingen gedämpft}
+Bei diesem Versuch spielen gleich mehrere Kräfte eine Rolle um eine gedämpfte Schwingung zu verursachen. Zum einen die Gewichtskraft und die Reibungskraft der turbulenten viskosen Luftreibung, die zusammen die Zentripetalkraft ergeben.
+Neben den bestehenden bekannten Grössen aus Versuch Lab 2 kommen folgende Grössen hinzu:
+\begin{itemize}
+	\item R = Seillänge 6m
+	\item $c_w$ = 1.1
+	\item $\rho_{Luft}$ = $1.2kg/m^3$
+	\item g = $9.81 m/s^2$
+	
+\end{itemize}
+\subsubsection{Radialer Anteil der Gewichtskraft}
+Die Gewichtskraft ist die Kraft, die durch die Wirkung der Gravitation, auf den Körper wirkt. Die Richtung hängt bei einer Kreisbewegung vom Winkel ab, diese wird in der Formelberechnung mitberücksichtigt.
+\begin{mdframed}
+$F_g = m * g *$
+\end{mdframed}
+\subsubsection{Zentripetalkraf}
+Diese Kraft ist dem radialen Vektor entgegengesetzt,vorausgesetzt dieser Vektor zeigt vom Kreismittelpunkt nach aussen. Die positive Richtung zeigt demnach nach innen. Diese Kraft ist die Komponente vom resultierenden Kraft, die Senkrecht zur Kreisbewegung steht und zum Mittelpunkt weist. In diesem Fall wird sie durch die Gravatationskraft und die Reibungskraft hervorgerufen und ist somit keine eigenständige neue Kraft.
+Die Zetriptalkraft hat die allgemeine Formel:
+\begin{mdframed}
+$E_{F_z}=m * \frac{v^2}{R} $
+\end{mdframed}
 
+\subsubsection{Reibungskraft}
+\subsubsection{Resultierende Kraft}
 \end{document}

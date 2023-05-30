@@ -20,6 +20,7 @@ plt.savefig('../Semesterprojekt Physik Engines/images/ropeJulia/Ortdiagramm.png'
 plt.show()
 
 
+
 plt.figure(figsize=(20,20))
 plt.plot(df["alphaJulia"], df["currentTimeStep"])
 plt.ylabel("[t] = s")

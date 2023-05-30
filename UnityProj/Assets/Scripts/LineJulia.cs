@@ -29,7 +29,7 @@ public class LineJulia : MonoBehaviour
         lineRenderer.positionCount = cubeTransforms.Length;
         for (int i = 0; i < cubeTransforms.Length; i++)
         {
-            if (cubeTransforms[0].position.x <= -21.51f)
+            if (cubeTransforms[1].position.x <= -21.51f)
             {
                 if (firstRun)
                 {
