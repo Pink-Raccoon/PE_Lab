@@ -196,7 +196,8 @@ GameObject:
   - component: {fileID: 152884794}
   - component: {fileID: 152884793}
   - component: {fileID: 152884795}
-  m_Layer: 6
+  - component: {fileID: 152884796}
+  m_Layer: 0
   m_Name: LineJulia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -332,6 +333,19 @@ MonoBehaviour:
   cubeTransforms:
   - {fileID: 1842126579}
   - {fileID: 1431399585}
+--- !u!114 &152884796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152884791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97bbd3c298de4e341b4f7331ec7a14d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Julia: {fileID: 1842126575}
 --- !u!1 &553091565
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,7 +956,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1330900047}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ropeRomeo
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
@@ -1105,7 +1119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1431399585}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ropeJulia
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
@@ -1120,7 +1134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431399584}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.84, y: 5.04, z: -1.5}
+  m_LocalPosition: {x: -21.51, y: 5.04, z: -1.5}
   m_LocalScale: {x: 0.1, y: 0.12, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1321,7 +1335,8 @@ GameObject:
   - component: {fileID: 1632725871}
   - component: {fileID: 1632725870}
   - component: {fileID: 1632725869}
-  m_Layer: 6
+  - component: {fileID: 1632725872}
+  m_Layer: 0
   m_Name: LineRomeo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1457,6 +1472,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1632725872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632725868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff09dd4566157984f95bfaf33901604c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Romeo: {fileID: 1377017608}
 --- !u!1 &1842126572
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,41 +5,50 @@ using UnityEngine;
 public class LineJulia : MonoBehaviour
 {
     private LineRenderer lineRenderer;
-    private CubeController cubeController;
+    private SwingJulia swingJulia;
+    private Rigidbody Julia;
 
     [SerializeField] private Transform[] cubeTransforms;
+    private Vector3 initialPosition;
 
-   
+    private bool firstRun = true;
+    private bool isSwinging = false;
 
     private GameObject ropeJulia;
     // Start is called before the first frame update
     void Start()
     {
-
+        swingJulia = FindObjectOfType(typeof(SwingJulia)) as SwingJulia;
+        lineRenderer = GetComponent<LineRenderer>();
+        Julia = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-
-        lineRenderer = GetComponent<LineRenderer>();
-        cubeController = GameObject.FindObjectOfType(typeof(CubeController)) as CubeController;
-
         lineRenderer.positionCount = cubeTransforms.Length;
         for (int i = 0; i < cubeTransforms.Length; i++)
         {
-            if (cubeTransforms[0].position.x <= -24.11)
+            if (cubeTransforms[0].position.x <= -21.51f)
             {
+                if (firstRun)
+                {
+                    initialPosition = swingJulia.GetPostion();
+                    firstRun = false;
+                    isSwinging = true;
+                }
                 lineRenderer.SetPosition(i, cubeTransforms[i].position);
-               cubeController.MakeSwing();
+                
             }
 
-            //var pos = new Vector3(0f, 6f, 0f);
-            //var posline = new Vector3(cubeTransforms[i].position.x, 0, 0f);
-            //lineRenderer.SetPosition(0, pos);
-            //lineRenderer.SetPosition(1, posline);
         }
 
+        if (isSwinging)
+        {
+            swingJulia.MakeSwingJulia(initialPosition);
+   
+        }
 
     }
+    
 }
