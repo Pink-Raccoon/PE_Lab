@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.5)  22 APR 2023 21:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.5)  29 MAY 2023 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1436,14 +1436,14 @@ Package biblatex Info: Reference segment=0 on input line 3.
 
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 1 undefined 
-on input line 15.
+on input line 20.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
 
 (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 
 
 (C:\Users\Asha\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1451,89 +1451,84 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 1 undefined 
-on input line 19.
+on input line 24.
 
 
-Overfull \hbox (50.81833pt too wide) in paragraph at lines 19--21
+Overfull \hbox (50.81833pt too wide) in paragraph at lines 24--26
 \OT1/cmr/m/n/10 Um die-ses An-fang-wert-pro-blems zu l[]osen lei-ten wir die Ge
 -schwin-dig-keit ab [[]]:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 1 undefined 
-on input line 24.
+on input line 30.
 
 [1
 
 {C:/Users/Asha/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 2 undefined 
-on input line 35.
+on input line 43.
 
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 2 undefined 
-on input line 36.
+on input line 45.
 
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 2 undefined 
-on input line 46.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--48
-
- []
+on input line 58.
 
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 2 undefined 
-on input line 50.
+on input line 62.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
 
  []
 
 [2]
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 3 undefined 
-on input line 66.
+on input line 79.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 3 undefined 
-on input line 71.
+on input line 86.
 
 
-Overfull \hbox (128.61023pt too wide) in paragraph at lines 71--73
+Overfull \hbox (128.61023pt too wide) in paragraph at lines 85--88
 \OT1/cmr/m/n/10 bleibt er-hal-ten vor und nach dem Stoss und wird durch den Im-
 pul-ser-hal-tungs-atz beschrieben[[]]:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
+Underfull \hbox (badness 10000) in paragraph at lines 85--88
 
  []
 
 
 LaTeX Warning: Citation 'tiplerpaula.PhysikFurStudierende' on page 3 undefined 
-on input line 76.
+on input line 92.
 
 
-Overfull \hbox (171.05576pt too wide) in paragraph at lines 75--78
+Overfull \hbox (171.05576pt too wide) in paragraph at lines 90--94
 \OT1/cmr/m/n/10 Die Re-la-ti-on zwi-schen der ki-ne-ti-schen Ener-gie und des I
 m-pul-ses, k[]onnen wir fol-gen-der-mas-sen herleiten[[]]:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--78
+Underfull \hbox (badness 10000) in paragraph at lines 90--94
 
  []
 
@@ -1548,8 +1543,8 @@ d.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `PhysikalischeBeschreibung.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  E52857C14C17C02CF80FEEC797EA0639;703.
+(rerunfilecheck)             Before: E52857C14C17C02CF80FEEC797EA0639;703
+(rerunfilecheck)             After:  3E6D19624B1C77807442EA38F191D819;981.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                PhysikalischeBeschreibung
@@ -1560,13 +1555,13 @@ Package logreq Info: Writing requests to 'PhysikalischeBeschreibung.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43138 strings out of 476339
- 969652 string characters out of 5788592
- 1931712 words of memory out of 5000000
- 62916 multiletter control sequences out of 15000+600000
+ 43145 strings out of 476339
+ 969762 string characters out of 5788592
+ 1932790 words of memory out of 5000000
+ 62922 multiletter control sequences out of 15000+600000
  515234 words of font info for 44 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 119i,5n,111p,768b,1682s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,5n,111p,768b,1681s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Asha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1
 000.pk><C:/Users/Asha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Asha/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -1580,9 +1575,9 @@ a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Asha/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
 rs/Asha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 
-Output written on PhysikalischeBeschreibung.pdf (3 pages, 135427 bytes).
+Output written on PhysikalischeBeschreibung.pdf (3 pages, 138084 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 500000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 
