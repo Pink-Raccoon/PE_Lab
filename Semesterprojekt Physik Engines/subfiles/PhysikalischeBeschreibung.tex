@@ -105,6 +105,7 @@ $E_{kin}=\frac{1}{2} * m * v^{2} = \frac{(mv)^{2}}{2m} = \frac{p^{2}}{2m}$
 Wenden wir dies nach dem Stoss an, sehen wir, dass die kinetische Energie geringer wird:
 \begin{mdframed}
 $E_{kin_{Ende}}=\frac{p^{2}}{2(m_{Romeo} + m_{Julia})} $
+${kin_{Ende}}=\frac{4^{2}}{2(2 + 2)} = 2J$
 \end{mdframed}
 
 \subsection{Teil 3: Beide Würfel schwingen gedämpft}
@@ -115,7 +116,7 @@ Neben den bestehenden bekannten Grössen aus Versuch Lab 2 kommen folgende Grös
 	\item $c_w$ = 1.1
 	\item $\rho_{Luft}$ = $1.2kg/m^3$
 	\item g = $9.81 m/s^2$
-	\item A = Stirnfläche Würfel = 1.5*1.5 = 2.25
+	\item A = Stirnfläche Würfel = 1.5*1.5 = $2.25m^2$
 In den folgenden Beispielrechnungen werden die Zahlen genommen für den Würfel Romeo, wobei dasselbe gilt für den Würfel Julia. 	Hinzukommnt, dass in C\# die Cosinus, Sinus und Arctangens im Bogenmass berechnet werden, also werden sie in diesem Kapitel auch so aufgeführt.
 \end{itemize}
      \begin{figure}[H]
@@ -142,7 +143,7 @@ $F_z=m * \frac{v^2}{R} $
 \end{mdframed}
 \textbf {Aus dem Versuch:}
 \begin{mdframed}
-$F_z = 2 * \frac{1.004936^2}{6} = 0.17N$
+$F_z = 2 * \frac{1.004936m*s^{-1}^2}{6m} = 0.17N$
 \end{mdframed}
 Wie erwähnt, hängt die Zentripetal Kraft von mehreren Kompenenten ab, in der horizontalen Richtung und in der vertikalen Richtung. Aus diesem Grund werden die horizontalen und vertikalen Komponenten aus den Ortsvektoren zu x und y der Zentripetalkraft zur Gewichtskraft addiert und dann jeweils gemäss der Lehre der Trigonometrie multipliziert mit dem Sinus oder Cosinus des Winkels. Die folgelnde Skizze stellt den Sachverhalt dar:
      \begin{figure}[H]
@@ -161,14 +162,14 @@ $Kraftvektor: (Fh,Fv,0)$
 \end{mdframed}
 \textbf {Aus dem Versuch:\\}
 Aufhaengepunktseil so gewaehlt dass Betrag des Vektors 6 ergibt, und bei Winkel 0 also steht der Wuerfel direkt unter dem Aufhaengepunkt, so ergibt es fuer x und z Koordinaten des Differenzvektors null, und zu y vom Aufhaengepunkt 6 dazu addieren.\\
-Position Würfel = $(-20.01,5.04,-1.5)$\\
-Aufhängepunkt = $(-20.01,11.04,-1.5)$\\
-Differenzvektor = $(0,6,0)$\\
+Position Würfel = $(-20.01m,5.04m,-1.5m)$\\
+Aufhängepunkt = $(-20.01m,11.04m,-1.5m)$\\
+Differenzvektor = $(0m,6m,0m)$\\
 \begin{mdframed}
 $H = 0.17N +19.62N = 19.77$\\\\
 $arctan(0)$ = $\frac{0}{0} = 0$\\\\
-$\frac{A}{H}= cos(0) \rightarrow A = (0.17N +19.62N) * cos(0)= 19.77$\\\\
-$\frac{G}{H}= sin(0) \rightarrow G = (0.17N +19.62N) * sin(0)= 0$\\\\
+$\frac{A}{H}= cos(0) \rightarrow A = (0.17N +19.62N) * cos(0)= 19.77N$\\\\
+$\frac{G}{H}= sin(0) \rightarrow G = (0.17N +19.62N) * sin(0)= 0N$\\\\
 $Kraftvektor: (19.77,0,0)$
 \end{mdframed}
 \subsubsection{Reibungskraft}
@@ -178,7 +179,7 @@ $F_r = -0.5 * A*\rho_{Luft}*c_w*v^2*\vec{e_v}$
 \end{mdframed}
 \textbf {Aus dem Versuch:}
 \begin{mdframed}
-$F_r = -0.5 * 2.25*1.2kg/m^3*1.1*1.004936^2*(-1.00, 0.00, 0.00) = (1.5,0,0)$
+$F_r = -0.5 * 2.25m^2*1.2kg/m^3*1.1*1.004936m*s^{-1}^2*(-1.00m*s^{-1}, 0.00, 0.00) = (1.5N,0,0)$
 \end{mdframed}
 \subsubsection{Resultierende Kraft}
 Zu allerletzt wird die vorher berechnete Kraft tangential zur Richtung Geschwindigkeit $\vec{e_v}$ dazu addiert und ergibt die resultierende Kraft, die auf die Würfel gesamthaft wirkt.
@@ -187,6 +188,6 @@ $(Fh,Fv,0) + F_r$
 \end{mdframed}
 \textbf {Aus dem Versuch:}
 \begin{mdframed}
-$(19.77,0,0 + (1.5,0,0) = (21.27N,0,0)$
+$(19.77N,0,0 + (1.5N,0,0) = (21.27N,0,0)$
 \end{mdframed}
 \end{document}
