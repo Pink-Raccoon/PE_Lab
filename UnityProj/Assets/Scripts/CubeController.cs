@@ -21,10 +21,10 @@ public class CubeController : MonoBehaviour
 
     private List<List<float>> timeSeriesElasticCollision;
     private List<List<float>> timeSeriessInelasticCollision;
-    private List<List<float>> timeSeriessRopeSwingRomeo;
-    private List<List<float>> timeSeriessRopeSwingJulia;
+
 
     private bool rotationTriggered = false;
+
  
     
     private string filePath;
@@ -74,8 +74,7 @@ public class CubeController : MonoBehaviour
 
         timeSeriesElasticCollision = new List<List<float>>();
         timeSeriessInelasticCollision = new List<List<float>>();
-        timeSeriessRopeSwingRomeo = new List<List<float>>(); ;
-        timeSeriessRopeSwingJulia = new List<List<float>>(); ;
+
 
 
     springLength = spring.GetComponent<MeshFilter>().mesh.bounds.size.y * spring.transform.localScale.y;
@@ -141,8 +140,8 @@ public class CubeController : MonoBehaviour
     {
         WriteElasticTimeSeriesToCsv();
         WriteInelasticTimeSeriesToCsv();
-        WriteTimeSeriessRopeSwingRomeoToCsv();
-        WriteTimeSeriessRopeSwingJuliaToCsv();
+        
+        
 
     }
     void WriteElasticTimeSeriesToCsv()
@@ -174,33 +173,9 @@ public class CubeController : MonoBehaviour
         }
     }
 
-    void WriteTimeSeriessRopeSwingRomeoToCsv()
-    {
-        using (var streamWriter = new StreamWriter("timeSeriesRopeRomeo.csv"))
-        {
-            streamWriter.WriteLine("currentTimeStep, cubeRomeo.position.x, cubeRomeo.position.y,alphaRomeo,horizonForceRomeo,verticalForceRomeo,-frictionForceRomeo.x + horizonForceRomeo, -frictionForceRomeo.y + verticalForceRomeo");
 
-            foreach (List<float> timeStep in timeSeriessRopeSwingRomeo)
-            {
-                streamWriter.WriteLine(string.Join(",", timeStep));
-                streamWriter.Flush();
-            }
-        }
-    }
 
-    void WriteTimeSeriessRopeSwingJuliaToCsv()
-    {
-        using (var streamWriter = new StreamWriter("timeSeriesRopJulia.csv"))
-        {
-            streamWriter.WriteLine("currentTimeStep, cubeJulia.position.x, cubeJulia.position.y,alphaJulia,horizonForceJulia,verticalForceJulia,-frictionForceJulia.x + horizonForceJulia, -frictionForceJulia.y + verticalForceJulia");
 
-            foreach (List<float> timeStep in timeSeriessRopeSwingJulia)
-            {
-                streamWriter.WriteLine(string.Join(",", timeStep));
-                streamWriter.Flush();
-            }
-        }
-    }
 
     void ChangeCubeTexture()
     {
@@ -240,62 +215,8 @@ public class CubeController : MonoBehaviour
 
 
     }
-    //* Teil 3 Seilschwung
-    //    */
-
-    public void MakeSwing()
-    {
-        
-        
-        var ropeCubeRomeo = ropeRomeo.transform.position - Romeo.position; 
-        alphaRomeo = (float)Math.Atan2(ropeCubeRomeo.y , ropeCubeRomeo.x);
-        Debug.Log("alphaRomeo is:" + alphaRomeo);
-
-        //Radial Gravity Rope Romeo
-        var FG = Romeo.mass * g * Math.Cos(alphaRomeo);
-        //Centripedal force
-        var FZ = Romeo.mass * (Math.Pow(Romeo.velocity.x, 2.0f)) / (R);
-        var FH = FG + FZ * Math.Sin(alphaRomeo);
-        var FV = FG + FZ * Math.Cos(alphaRomeo);
-        //Turbulent viskose Friction
-        var normalizedVelocityRomeo = Romeo.velocity.normalized;
-        var frictionForceRomeo = (float)(-0.5 * areaRomeo * constantAirFriction * cCube * Math.Pow(Romeo.velocity.x, 2.0f)) * normalizedVelocityRomeo;
-        Vector3 centripedalForceRomeo = new Vector3((float)FH, (float)FV, 0.0f);
-        
-        Romeo.AddForce(centripedalForceRomeo + frictionForceRomeo);
-        var force = centripedalForceRomeo + frictionForceRomeo;
-        Debug.Log("swing Romeo" + (centripedalForceRomeo +frictionForceRomeo));
-
-        currentTimeStep += Time.deltaTime;
-        timeSeriessRopeSwingRomeo.Add(new List<float>() { currentTimeStep, Romeo.position.x, Romeo.position.y, alphaRomeo, (float)FH, (float)FV, force.x, force.y, force.z });
 
 
-        //Julia
 
-        var ropeCubeJulia = ropeJulia.transform.position - Julia.position;
-        alphaJulia =(float) Math.Atan2(ropeCubeJulia.y , ropeCubeJulia.x);
-        Debug.Log("alphaJulia is:" + alphaJulia);
-
-        //Radial Gravity Rope Romeo
-        var radialGravityRopeJulia = Julia.mass * g * Math.Cos(alphaJulia);
-        //Centripedal force
-        var centriPedalForceJulia = Julia.mass * (Math.Pow(Julia.velocity.x, 2.0f)) / (R);
-        //Turbulent viskose Friction
-        var normalizedVelocityJuia = Julia.velocity.normalized;
-        var frictionForceJulia = (float)(-0.5 * areaJulia * constantAirFriction * cCube * Mathf.Pow(Julia.velocity.x, 2.0f)) * normalizedVelocityJuia;
-        var horizonForceJulia = radialGravityRopeJulia + centriPedalForceJulia * Math.Sin(alphaJulia);
-        var verticalForceJulia = radialGravityRopeJulia + centriPedalForceJulia * Math.Cos(alphaJulia);
-
-        var centripedalForceJulia = new Vector3((float)horizonForceJulia, (float)verticalForceJulia, 0.0f);
-        var magnitudeCentripedalJulia = centripedalForceJulia.magnitude;
-
-        Julia.AddForce(centripedalForceJulia+frictionForceJulia);
-        var forceJ = centripedalForceJulia + frictionForceJulia;
-        Debug.Log("swing julia" + (centripedalForceJulia+ frictionForceJulia));
-        
-        cubeJuliaTimeStep += Time.deltaTime;
-        timeSeriessRopeSwingJulia.Add(new List<float>() { currentTimeStep, Julia.position.x, Julia.position.y, alphaJulia, (float)horizonForceJulia, (float)verticalForceJulia, forceJ.x, forceJ.y, forceJ.z });
-      
-    }
 
 }
