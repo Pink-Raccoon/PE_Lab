@@ -8,9 +8,6 @@ public class SwingRomeo : MonoBehaviour
 {
     public Rigidbody Romeo;
     
-   
-
-
     private List<List<float>> timeSeriessRopeSwingRomeo;
 
 
@@ -48,10 +45,9 @@ public class SwingRomeo : MonoBehaviour
 
     public void MakeSwing(Vector3 connectedPos)
     {
-        var ropeCubeRomeo = Romeo.position - connectedPos; // Endpunkt - Anfangspunkt
+        var ropeCubeRomeo = connectedPos - Romeo.position; // Endpunkt - Anfangspunkt
         Debug.Log("diff " + ropeCubeRomeo);
-        //alphaRomeo = (float)Math.Atan(ropeCubeRomeo.x / ropeCubeRomeo.y);
-        alphaRomeo = (float)Math.Atan((Romeo.position.x - connectedPos.x) / (Romeo.position.y - connectedPos.y));
+        alphaRomeo = (float)Math.Atan(ropeCubeRomeo.x / ropeCubeRomeo.y);
         Debug.Log("alpha " + alphaRomeo);
         var FG = Romeo.mass * g.magnitude * Math.Cos(alphaRomeo);
         var FZ = Romeo.mass * (Math.Pow(Romeo.velocity.magnitude, 2.0f)) / (R);
@@ -76,7 +72,7 @@ public class SwingRomeo : MonoBehaviour
     {
         using (var streamWriter = new StreamWriter("timeSeriesRopeRomeo.csv"))
         {
-            streamWriter.WriteLine("currentTimeStep, cubeRomeo.position.x, cubeRomeo.position.y,alphaRomeo,degree,horizonForceRomeo,verticalForceRomeo,-frictionForceRomeo.x + horizonForceRomeo, -frictionForceRomeo.y + verticalForceRomeo");
+            streamWriter.WriteLine("currentTimeStep, cubeRomeo.position.x, cubeRomeo.position.y,alphaRomeo,degree,horizonForceRomeo,verticalForceRomeo, -frictionForceRomeo.x + horizonForceRomeo, -frictionForceRomeo.y + verticalForceRomeo, -frictionForceRomeo.z + zAxisForceRomeo");
 
             foreach (List<float> timeStep in timeSeriessRopeSwingRomeo)
             {
