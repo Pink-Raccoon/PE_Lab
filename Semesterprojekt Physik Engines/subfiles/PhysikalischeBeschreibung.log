@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.5)  30 MAY 2023 16:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.5)  30 MAY 2023 19:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1457,22 +1457,95 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
-[3] (PhysikalischeBeschreibung.aux)
+<..//./images/Lab3Unity/KraeftePendel.png, id=62, 417.05812pt x 503.63156pt>
+File: ..//./images/Lab3Unity/KraeftePendel.png Graphic file (type png)
+<use ..//./images/Lab3Unity/KraeftePendel.png>
+Package pdftex.def Info: ..//./images/Lab3Unity/KraeftePendel.png  used on inpu
+t line 114.
+(pdftex.def)             Requested size: 441.01772pt x 532.59428pt.
+[3] [4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.126 $
+       F_g = 2 * 9.81 * cos(0) = 19.62N$ <..//./images/Lab3Unity/KraeftePendel.
+png>]
+<..//./images/Lab3Unity/KraefteDiagramm.png, id=74, 327.47343pt x 249.18094pt>
+File: ..//./images/Lab3Unity/KraefteDiagramm.png Graphic file (type png)
+<use ..//./images/Lab3Unity/KraefteDiagramm.png>
+Package pdftex.def Info: ..//./images/Lab3Unity/KraefteDiagramm.png  used on in
+put line 141.
+(pdftex.def)             Requested size: 441.01772pt x 335.58127pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--152
+
+ []
+
+[5
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.152 \end{mdframed}
+                     <..//./images/Lab3Unity/KraefteDiagramm.png>]
+Package mdframed Info: Not enough space on this page on input line 152.
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--164
+
+ []
+
+[6] (PhysikalischeBeschreibung.aux)
 Package rerunfilecheck Info: File `PhysikalischeBeschreibung.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 5DFB421334392EE71415E112C464924F;1661.
+(rerunfilecheck)             Checksum: 0B2479CDB8BDEBF5C5FBA72A2BDACE38;1666.
 Package logreq Info: Writing requests to 'PhysikalischeBeschreibung.run.xml'.
 \openout1 = `PhysikalischeBeschreibung.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42971 strings out of 476339
- 966308 string characters out of 5788592
- 1931724 words of memory out of 5000000
- 62744 multiletter control sequences out of 15000+600000
+ 43002 strings out of 476339
+ 967218 string characters out of 5788592
+ 1931864 words of memory out of 5000000
+ 62766 multiletter control sequences out of 15000+600000
  515234 words of font info for 44 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 119i,5n,111p,768b,1681s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,7n,111p,768b,1685s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Asha\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1
 000.pk><C:/Users/Asha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Asha/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -1486,9 +1559,9 @@ a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Asha/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
 rs/Asha/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 
-Output written on PhysikalischeBeschreibung.pdf (3 pages, 145269 bytes).
+Output written on PhysikalischeBeschreibung.pdf (6 pages, 288932 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 PDF objects out of 1000 (max. 8388607)
+ 18 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
 
