@@ -40,9 +40,8 @@ public class SwingJulia : MonoBehaviour
     }
     public void MakeSwingJulia(Vector3 connectedPos)
     {
-        var ropeCubeJulia = Julia.position - connectedPos; // Endpunkt - Anfangspunkt
-        //alphaJulia = (float)Math.Atan(ropeCubeJulia.x / ropeCubeJulia.y);
-        alphaJulia = (float)Math.Atan((Julia.position.x - connectedPos.x) / (Julia.position.y - connectedPos.y)); ;
+        var ropeCubeJulia = connectedPos - Julia.position; // Endpunkt - Anfangspunkt
+        alphaJulia = (float)Math.Atan(ropeCubeJulia.x / ropeCubeJulia.y);
         var FG = Julia.mass * g.magnitude * Math.Cos(alphaJulia);
         var FZ = Julia.mass * (Math.Pow(Julia.velocity.magnitude, 2.0f)) / (R);
         var normalizedVelocityJulia = Julia.velocity.normalized;
@@ -63,9 +62,9 @@ public class SwingJulia : MonoBehaviour
     }
     void WriteTimeSeriessRopeSwingJuliaToCsv()
     {
-        using (var streamWriter = new StreamWriter("timeSeriesRopJulia.csv"))
+        using (var streamWriter = new StreamWriter("timeSeriesRopeJulia.csv"))
         {
-            streamWriter.WriteLine("currentTimeStep, cubeJulia.position.x, cubeJulia.position.y,alphaJulia,degree,horizonForceJulia,verticalForceJulia,-frictionForceJulia.x + horizonForceJulia, -frictionForceJulia.y + verticalForceJulia");
+            streamWriter.WriteLine("currentTimeStep, cubeJulia.position.x, cubeJulia.position.y, alphaJulia, degree, horizonForceJulia, verticalForceJulia, -frictionForceJulia.x + horizonForceJulia, -frictionForceJulia.y + verticalForceJulia, -frictionForceJulia.z + zAxisForceJulia");
 
             foreach (List<float> timeStep in timeSeriessRopeSwingJulia)
             {
