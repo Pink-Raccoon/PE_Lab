@@ -311,7 +311,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152884791}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.11, y: 2.48, z: -1.44}
+  m_LocalPosition: {x: -21.51, y: 5.04, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -331,8 +331,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeTransforms:
-  - {fileID: 1842126579}
   - {fileID: 1431399585}
+  - {fileID: 1842126579}
 --- !u!114 &152884796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1356,8 +1356,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeTransforms:
-  - {fileID: 1377017607}
   - {fileID: 1330900047}
+  - {fileID: 1377017607}
 --- !u!120 &1632725870
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1465,7 +1465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632725868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.13, y: 0.375, z: -1.44}
+  m_LocalPosition: {x: -20.01, y: 5.04, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

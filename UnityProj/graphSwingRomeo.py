@@ -9,23 +9,47 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-df = pd.read_csv("../UnityProj/timeSeriesRopeRomeo.csv")
+df = pd.read_csv("./TimeSeries/timeSeriesRopeRomeo.csv")
 
-plt.figure(figsize=(20,20))
-
+#plt.figure(figsize=(20,20))
 plt.plot(df[" cubeRomeo.position.x"], df[" cubeRomeo.position.y"])
-plt.ylabel("[s] = m")
-plt.xlabel("[s] = m")
+
+plt.xlabel("Position x [s] = m")
+plt.ylabel("Position y [s] = m")
 plt.title("Bewegung Würfel Romeo")
 plt.savefig('../Semesterprojekt Physik Engines/images/ropeRomeo/Ortdiagramm.png', dpi=300, bbox_inches='tight')
 plt.show()
 
+plt.plot(df["currentTimeStep"],df["degree"])
+plt.ylabel("[s] = alpha")
+plt.xlabel("[t] = s")
+plt.title("Auslenkung in Grad als Funktion der Zeit")
+plt.savefig('../Semesterprojekt Physik Engines/images/ropeRomeo/AuslenkungDeg.png', dpi=300, bbox_inches='tight')
+plt.show()
 
-plt.figure(figsize=(20,20))
+#%%
 
-plt.plot(df["alphaRomeo"], df["currentTimeStep"])
-plt.ylabel("[t] = s")
-plt.xlabel("[s] = alpha")
-plt.title("Auslenkung als Funktion der Zeit")
-plt.savefig('../Semesterprojekt Physik Engines/images/ropeRomeo/Auslenkung.png', dpi=300, bbox_inches='tight')
+#plt.figure(figsize=(20,20))
+plt.plot(df["currentTimeStep"],df[" cubeRomeo.position.x"])
+plt.ylabel("[s] = m")
+plt.xlabel("[t] = s")
+plt.title("Bewegung Würfel Romeo x")
+plt.savefig('../Semesterprojekt Physik Engines/images/ropeRomeo/x(t).png', dpi=300, bbox_inches='tight')
+plt.show()
+
+plt.plot(df["currentTimeStep"],df[" cubeRomeo.position.y"])
+plt.ylabel("[s] = m")
+plt.xlabel("[t] = s")
+plt.title("Bewegung Würfel Romeo y")
+plt.savefig('../Semesterprojekt Physik Engines/images/ropeRomeo/y(t).png', dpi=300, bbox_inches='tight')
+plt.show()
+
+#plt.figure()
+plt.plot(df["currentTimeStep"],df["alphaRomeo"])
+plt.ylabel("[s] = alpha")
+plt.xlabel("[t] = s")
+plt.title("Auslenkung in Rad als Funktion der Zeit")
+#plt.ylim(25,54)
+# plt.xticks([1, 2, 3, 4, 5,6,7,8,9,10,11,12,13])
+plt.savefig('../Semesterprojekt Physik Engines/images/ropeRomeo/AuslenkungRad.png', dpi=300, bbox_inches='tight')
 plt.show()

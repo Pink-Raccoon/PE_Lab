@@ -32,7 +32,7 @@ public class SwingJulia : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        double currentTime = Time.fixedTimeAsDouble - startime;
+        cubeJuliaTimeStep += Time.deltaTime;
     }
     public Vector3 GetPostion()
     {
@@ -40,7 +40,7 @@ public class SwingJulia : MonoBehaviour
     }
     public void MakeSwingJulia(Vector3 connectedPos)
     {
-        var ropeCubeJulia = Julia.position - connectedPos; // Endpunkt - Anfangspunkt
+        var ropeCubeJulia = connectedPos - Julia.position; // Endpunkt - Anfangspunkt
         alphaJulia = (float)Math.Atan(ropeCubeJulia.x / ropeCubeJulia.y);
         var FG = Julia.mass * g.magnitude * Math.Cos(alphaJulia);
         var FZ = Julia.mass * (Math.Pow(Julia.velocity.magnitude, 2.0f)) / (R);
@@ -49,11 +49,11 @@ public class SwingJulia : MonoBehaviour
         var FH = (FG + FZ) * Math.Sin(alphaJulia);
         var FV = (FG + FZ) * Math.Cos(alphaJulia);
         var centripedalForceJulia = new Vector3((float)FH, (float)FV, 0.0f) ;
-        var forceJ = centripedalForceJulia + FR;
+        var forceJ = centripedalForceJulia  + FR;
         Julia.AddForce(forceJ);
-
+        var degree = ConvertRadiansToDegrees(alphaJulia);
         cubeJuliaTimeStep += Time.deltaTime;
-        timeSeriessRopeSwingJulia.Add(new List<float>() { cubeJuliaTimeStep, Julia.position.x, Julia.position.y, alphaJulia, (float)FH, (float)FV, forceJ.x, forceJ.y, forceJ.z });
+        timeSeriessRopeSwingJulia.Add(new List<float>() { cubeJuliaTimeStep, Julia.position.x, Julia.position.y, alphaJulia,(float)degree, (float)FH, (float)FV, forceJ.x, forceJ.y, forceJ.z });
     }
 
     void OnApplicationQuit()
@@ -62,9 +62,9 @@ public class SwingJulia : MonoBehaviour
     }
     void WriteTimeSeriessRopeSwingJuliaToCsv()
     {
-        using (var streamWriter = new StreamWriter("timeSeriesRopJulia.csv"))
+        using (var streamWriter = new StreamWriter("timeSeriesRopeJulia.csv"))
         {
-            streamWriter.WriteLine("currentTimeStep, cubeJulia.position.x, cubeJulia.position.y,alphaJulia,horizonForceJulia,verticalForceJulia,-frictionForceJulia.x + horizonForceJulia, -frictionForceJulia.y + verticalForceJulia");
+            streamWriter.WriteLine("currentTimeStep, cubeJulia.position.x, cubeJulia.position.y, alphaJulia, degree, horizonForceJulia, verticalForceJulia, -frictionForceJulia.x + horizonForceJulia, -frictionForceJulia.y + verticalForceJulia, -frictionForceJulia.z + zAxisForceJulia");
 
             foreach (List<float> timeStep in timeSeriessRopeSwingJulia)
             {
@@ -72,6 +72,11 @@ public class SwingJulia : MonoBehaviour
                 streamWriter.Flush();
             }
         }
+    }
+    public static double ConvertRadiansToDegrees(double radians)
+    {
+        double degrees = (180 / Math.PI) * radians;
+        return (degrees);
     }
 
 }
