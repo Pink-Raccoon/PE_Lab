@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.20)  30 MAY 2023 07:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.20)  30 MAY 2023 07:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1330,24 +1330,24 @@ Package csquotes Info: Redefining alias 'default' -> 'german'.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1409,7 +1409,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 75.
+Package hyperref Info: Link coloring ON on input line 76.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1433,24 +1433,24 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 75.
-Package biblatex Info: Reference segment=0 on input line 75.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+Package biblatex Info: Reference section=0 on input line 76.
+Package biblatex Info: Reference segment=0 on input line 76.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
 
 
 (C:\Users\miche\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
 
 
 (C:\Users\miche\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<./images/NEWTON.jpg, id=46, 2631.8325pt x 3449.88875pt>
+<./images/NEWTON.jpg, id=50, 2631.8325pt x 3449.88875pt>
 File: ./images/NEWTON.jpg Graphic file (type jpg)
 <use ./images/NEWTON.jpg>
-Package pdftex.def Info: ./images/NEWTON.jpg  used on input line 80.
+Package pdftex.def Info: ./images/NEWTON.jpg  used on input line 81.
 (pdftex.def)             Requested size: 227.62204pt x 298.36917pt.
 
 [1
@@ -1481,19 +1481,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--19
  []
 
 ) [3] (subfiles/AufbauDesExperiments.tex
-<./images/2Lab_2dPictureNr1.png, id=67, 1203.2955pt x 138.5175pt>
+<./images/2Lab_2dPictureNr1.png, id=71, 1203.2955pt x 138.5175pt>
 File: ./images/2Lab_2dPictureNr1.png Graphic file (type png)
 <use ./images/2Lab_2dPictureNr1.png>
 Package pdftex.def Info: ./images/2Lab_2dPictureNr1.png  used on input line 17.
 
 (pdftex.def)             Requested size: 441.01772pt x 50.76665pt.
-<./images/2Lab_2dPictureNr2.png, id=70, 1203.2955pt x 142.73325pt>
+<./images/2Lab_2dPictureNr2.png, id=74, 1203.2955pt x 142.73325pt>
 File: ./images/2Lab_2dPictureNr2.png Graphic file (type png)
 <use ./images/2Lab_2dPictureNr2.png>
 Package pdftex.def Info: ./images/2Lab_2dPictureNr2.png  used on input line 26.
 
 (pdftex.def)             Requested size: 441.01772pt x 52.31172pt.
-<./images/2Lab_2dPictureNr3.png, id=72, 1305.07574pt x 158.994pt>
+<./images/2Lab_2dPictureNr3.png, id=76, 1305.07574pt x 158.994pt>
 File: ./images/2Lab_2dPictureNr3.png Graphic file (type png)
 <use ./images/2Lab_2dPictureNr3.png>
 Package pdftex.def Info: ./images/2Lab_2dPictureNr3.png  used on input line 36.
@@ -1504,19 +1504,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.98 \newpage
+l.99 \newpage
              
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.98 \newpage
+l.99 \newpage
              
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.98 \newpage
+l.99 \newpage
               <./images/2Lab_2dPictureNr1.png> <./images/2Lab_2dPictureNr2.png>
  <./images/2Lab_2dPictureNr3.png>] (subfiles/PhysikalischeBeschreibung.tex
 [5]
@@ -1531,13 +1531,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
 ) [7]
 (subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex
-<./images/2Lab_ExperimentOverview.png, id=118, 989.49675pt x 501.072pt>
+<./images/2Lab_ExperimentOverview.png, id=122, 989.49675pt x 501.072pt>
 File: ./images/2Lab_ExperimentOverview.png Graphic file (type png)
 <use ./images/2Lab_ExperimentOverview.png>
 Package pdftex.def Info: ./images/2Lab_ExperimentOverview.png  used on input li
 ne 13.
 (pdftex.def)             Requested size: 441.01772pt x 223.33186pt.
-<./images/2Lab_JuliaCube.PNG, id=119, 593.21625pt x 437.635pt>
+<./images/2Lab_JuliaCube.PNG, id=123, 593.21625pt x 437.635pt>
 File: ./images/2Lab_JuliaCube.PNG Graphic file (type png)
 <use ./images/2Lab_JuliaCube.PNG>
 Package pdftex.def Info: ./images/2Lab_JuliaCube.PNG  used on input line 27.
@@ -1550,12 +1550,12 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.32 
       <./images/2Lab_ExperimentOverview.png>]
-<./images/2Lab_RomeoCube.PNG, id=126, 663.98062pt x 318.69063pt>
+<./images/2Lab_RomeoCube.PNG, id=130, 663.98062pt x 318.69063pt>
 File: ./images/2Lab_RomeoCube.PNG Graphic file (type png)
 <use ./images/2Lab_RomeoCube.PNG>
 Package pdftex.def Info: ./images/2Lab_RomeoCube.PNG  used on input line 38.
 (pdftex.def)             Requested size: 284.52756pt x 136.56259pt.
-<./images/2Lab_Spring.PNG, id=128, 611.78563pt x 343.78438pt>
+<./images/2Lab_Spring.PNG, id=132, 611.78563pt x 343.78438pt>
 File: ./images/2Lab_Spring.PNG Graphic file (type png)
 <use ./images/2Lab_Spring.PNG>
 Package pdftex.def Info: ./images/2Lab_Spring.PNG  used on input line 53.
@@ -1574,37 +1574,596 @@ s been already used, duplicate ignored
 l.58         \end{itemize}
                            <./images/2Lab_JuliaCube.PNG> <./images/2Lab_RomeoCu
 be.PNG>]
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:71:
+ Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.71     {\cubeControllerFiles}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:71:
+ Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.71     {\cubeControllerFiles}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:71:
+ Undefined control sequence.
+<inserted text> lst@inputpath cubeControllerFiles 
+                                                  
+l.71     {\cubeControllerFiles}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 71.
- (..//UnityProj/Assets/Scripts/CubeController.cs)
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:71:
+ Undefined control sequence.
+\lst@name ->\lst@inputpath \cubeControllerFiles 
+                                                
+l.71     {\cubeControllerFiles}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:71:
+ Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.71     {\cubeControllerFiles}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:71:
+ Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.71     {\cubeControllerFiles}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:71:
+ Undefined control sequence.
+<inserted text> lst@inputpath cubeControllerFiles 
+                                                  
+l.71     {\cubeControllerFiles}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(C:\Users\miche\AppData\Local\Programs\MiKTeX\tex/latex/tools\.tex)
 
 LaTeX Warning: Reference `fig:2Lab_SpringDeviation' on page 10 undefined on inp
 ut line 73.
 
-
-! Package Listings Error: File `..//UnityProj/Assets/CubeController(.cs)' not f
-ound.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: cs)
-
-Enter file name: 
 subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:75:
- Emergency stop.
-<read *> 
-         
-l.75     {..//UnityProj/Assets/CubeController.cs}
-                                                 ^^M
-*** (cannot \read from terminal in nonstop modes)
+ Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.75     {\cubeControllerFiles}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
- 
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:75:
+ Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.75     {\cubeControllerFiles}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:75:
+ Undefined control sequence.
+<inserted text> lst@inputpath cubeControllerFiles 
+                                                  
+l.75     {\cubeControllerFiles}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:75:
+ Undefined control sequence.
+\lst@name ->\lst@inputpath \cubeControllerFiles 
+                                                
+l.75     {\cubeControllerFiles}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:75:
+ Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.75     {\cubeControllerFiles}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:75:
+ Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.75     {\cubeControllerFiles}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:75:
+ Undefined control sequence.
+<inserted text> lst@inputpath cubeControllerFiles 
+                                                  
+l.75     {\cubeControllerFiles}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(C:\Users\miche\AppData\Local\Programs\MiKTeX\tex/latex/tools\.tex)
+<./images/2Lab_SpringDeviation.PNG, id=141, 236.38312pt x 174.15062pt>
+File: ./images/2Lab_SpringDeviation.PNG Graphic file (type png)
+<use ./images/2Lab_SpringDeviation.PNG>
+Package pdftex.def Info: ./images/2Lab_SpringDeviation.PNG  used on input line 
+81.
+(pdftex.def)             Requested size: 142.26378pt x 104.81271pt.
+) [10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.105 \newpage
+              
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.105 \newpage
+               <./images/2Lab_Spring.PNG> <./images/2Lab_SpringDeviation.PNG>]
+(subfiles/Rueckblick und Lehren aus dem Versuch.tex) [11]
+(subfiles/ResultateMitGrafischerDarstellung.tex
+
+LaTeX Warning: Reference `fig:GeschwindigkeitAlsFunktionDerZeit' on page 12 und
+efined on input line 10.
+
+
+LaTeX Warning: Reference `fig:OrtAlsFunktionDerZeit' on page 12 undefined on in
+put line 10.
+
+<./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.png, id=157, 385.9218pt x
+ 107.2005pt>
+File: ./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.png Graphic file (ty
+pe png)
+<use ./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.png>
+Package pdftex.def Info: ./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.p
+ng  used on input line 15.
+(pdftex.def)             Requested size: 441.01772pt x 122.50916pt.
+<./images/Elastisch/OrtAlsFunktionDerZeit.png, id=158, 1171.2558pt x 297.0297pt
+>
+File: ./images/Elastisch/OrtAlsFunktionDerZeit.png Graphic file (type png)
+<use ./images/Elastisch/OrtAlsFunktionDerZeit.png>
+Package pdftex.def Info: ./images/Elastisch/OrtAlsFunktionDerZeit.png  used on 
+input line 23.
+(pdftex.def)             Requested size: 441.01772pt x 111.83908pt.
+[12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.29     \newpage
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.29     \newpage
+                  <./images/Elastisch/GeschwindigkeitAlsFunktionDerZeit.png> <.
+/images/Elastisch/OrtAlsFunktionDerZeit.png>]
+
+LaTeX Warning: Reference `fig:gesamtImpluls' on page 13 undefined on input line
+ 32.
+
+
+LaTeX Warning: Reference `fig:Endgeschwindigkeit' on page 13 undefined on input
+ line 32.
+
+
+LaTeX Warning: Reference `fig:gesamtImpuls' on page 13 undefined on input line 
+36.
+
+<./images/Inelastisch/GesamtImpluls.png, id=170, 1182.3372pt x 297.0297pt>
+File: ./images/Inelastisch/GesamtImpluls.png Graphic file (type png)
+<use ./images/Inelastisch/GesamtImpluls.png>
+Package pdftex.def Info: ./images/Inelastisch/GesamtImpluls.png  used on input 
+line 46.
+(pdftex.def)             Requested size: 441.01772pt x 110.79211pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--50
+
+ []
+
+<./images/Inelastisch/ImpulsJulia.png, id=171, 393.3897pt x 277.9986pt>
+File: ./images/Inelastisch/ImpulsJulia.png Graphic file (type png)
+<use ./images/Inelastisch/ImpulsJulia.png>
+Package pdftex.def Info: ./images/Inelastisch/ImpulsJulia.png  used on input li
+ne 54.
+(pdftex.def)             Requested size: 441.01772pt x 311.66595pt.
+<./images/Inelastisch/ImpulsRomeo.png, id=172, 1171.2558pt x 297.0297pt>
+File: ./images/Inelastisch/ImpulsRomeo.png Graphic file (type png)
+<use ./images/Inelastisch/ImpulsRomeo.png>
+Package pdftex.def Info: ./images/Inelastisch/ImpulsRomeo.png  used on input li
+ne 62.
+(pdftex.def)             Requested size: 441.01772pt x 111.83908pt.
+[13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.67 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.67 
+      <./images/Inelastisch/GesamtImpluls.png> <./images/Inelastisch/ImpulsJuli
+a.png>]
+<./images/Inelastisch/OrtJuliaAlsFunktionDerZeit.png, id=183, 1197.0321pt x 297
+.0297pt>
+File: ./images/Inelastisch/OrtJuliaAlsFunktionDerZeit.png Graphic file (type pn
+g)
+<use ./images/Inelastisch/OrtJuliaAlsFunktionDerZeit.png>
+Package pdftex.def Info: ./images/Inelastisch/OrtJuliaAlsFunktionDerZeit.png  u
+sed on input line 70.
+(pdftex.def)             Requested size: 441.01772pt x 109.43243pt.
+<./images/Inelastisch/GeschwindigkeitRomeo.png, id=184, 385.9218pt x 107.2005pt
+>
+File: ./images/Inelastisch/GeschwindigkeitRomeo.png Graphic file (type png)
+<use ./images/Inelastisch/GeschwindigkeitRomeo.png>
+Package pdftex.def Info: ./images/Inelastisch/GeschwindigkeitRomeo.png  used on
+ input line 78.
+(pdftex.def)             Requested size: 441.01772pt x 122.50916pt.
+<./images/Inelastisch/GeschwindigkeitJulia.png, id=185, 385.9218pt x 107.2005pt
+>
+File: ./images/Inelastisch/GeschwindigkeitJulia.png Graphic file (type png)
+<use ./images/Inelastisch/GeschwindigkeitJulia.png>
+Package pdftex.def Info: ./images/Inelastisch/GeschwindigkeitJulia.png  used on
+ input line 86.
+(pdftex.def)             Requested size: 441.01772pt x 122.50916pt.
+ [14
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.91 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.91 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.91 
+      <./images/Inelastisch/ImpulsRomeo.png> <./images/Inelastisch/OrtJuliaAlsF
+unktionDerZeit.png> <./images/Inelastisch/GeschwindigkeitRomeo.png>]
+<./images/Inelastisch/Endgeschwindigkeit.png, id=196, 377.41pt x 108.405pt>
+File: ./images/Inelastisch/Endgeschwindigkeit.png Graphic file (type png)
+<use ./images/Inelastisch/Endgeschwindigkeit.png>
+Package pdftex.def Info: ./images/Inelastisch/Endgeschwindigkeit.png  used on i
+nput line 96.
+(pdftex.def)             Requested size: 441.01772pt x 126.67618pt.
+) [15
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.111 \newpage
+              
+pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.111 \newpage
+               <./images/Inelastisch/GeschwindigkeitJulia.png> <./images/Inelas
+tisch/Endgeschwindigkeit.png>] (subfiles/code.tex
+
+subfiles/code.tex:18: Package Listings Error: Couldn't load requested style.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...uler, style=customc]{\cubeControllerFiles}
+                                                  
+The following styles weren't loadable:
+    ,customc$
+This may cause errors in the sequel.
+
+
+subfiles/code.tex:18: Package Listings Error: style customc undefined.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...uler, style=customc]{\cubeControllerFiles}
+                                                  
+The style is not loadable. Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+subfiles/code.tex:18: Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.18 ...uler, style=customc]{\cubeControllerFiles}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/code.tex:18: Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.18 ...uler, style=customc]{\cubeControllerFiles}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/code.tex:18: Undefined control sequence.
+<inserted text> lst@inputpath cubeControllerFiles 
+                                                  
+l.18 ...uler, style=customc]{\cubeControllerFiles}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+subfiles/code.tex:18: Package Listings Error: Couldn't load requested style.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...uler, style=customc]{\cubeControllerFiles}
+                                                  
+The following styles weren't loadable:
+    ,customc$
+This may cause errors in the sequel.
+
+
+subfiles/code.tex:18: Package Listings Error: style customc undefined.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...uler, style=customc]{\cubeControllerFiles}
+                                                  
+The style is not loadable. Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+subfiles/code.tex:18: Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.18 ...uler, style=customc]{\cubeControllerFiles}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/code.tex:18: Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.18 ...uler, style=customc]{\cubeControllerFiles}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/code.tex:18: Undefined control sequence.
+<inserted text> lst@inputpath cubeControllerFiles 
+                                                  
+l.18 ...uler, style=customc]{\cubeControllerFiles}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(C:\Users\miche\AppData\Local\Programs\MiKTeX\tex/latex/tools\.tex)
+subfiles/code.tex:20: Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.20         {\cubeControllerFiles}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/code.tex:20: Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.20         {\cubeControllerFiles}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/code.tex:20: Undefined control sequence.
+<inserted text> lst@inputpath cubeControllerFiles 
+                                                  
+l.20         {\cubeControllerFiles}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/code.tex:20: Undefined control sequence.
+\lst@name ->\lst@inputpath \cubeControllerFiles 
+                                                
+l.20         {\cubeControllerFiles}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/code.tex:20: Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.20         {\cubeControllerFiles}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/code.tex:20: Undefined control sequence.
+<argument> lst@inputpath cubeControllerFiles 
+                                             
+l.20         {\cubeControllerFiles}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+subfiles/code.tex:20: Undefined control sequence.
+<inserted text> lst@inputpath cubeControllerFiles 
+                                                  
+l.20         {\cubeControllerFiles}
+                                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(C:\Users\miche\AppData\Local\Programs\MiKTeX\tex/latex/tools\.tex [16])
+(..//UnityProj/graphElastic.py [17]) (..//UnityProj/graphInelastic.py [18]))
+[19] (main.lof)
+\tf@lof=\write7
+\openout7 = `main.lof'.
+
+ [20] [21] (main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 45F5DA75FC159DEAFBF880A250F36C74;1498.
+
+Package biblatex Warning: Please rerun LaTeX.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 43663 strings out of 476331
- 977259 string characters out of 5787765
- 1930389 words of memory out of 5000000
- 63390 multiletter control sequences out of 15000+600000
- 520951 words of font info for 66 fonts, out of 8000000 for 9000
+ 44162 strings out of 476331
+ 988421 string characters out of 5787765
+ 2060435 words of memory out of 5000000
+ 63599 multiletter control sequences out of 15000+600000
+ 521598 words of font info for 68 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,7n,94p,723b,1441s stack positions out of 10000i,1000n,20000p,200000b,200000s
-subfiles/Beschreibung der Implentierung inklusive Screenshots aus Unity.tex:75:
-  ==> Fatal error occurred, no output PDF file produced!
+ 99i,7n,94p,723b,2164s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\miche\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1000.pk><C:/Users/miche/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/miche/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/miche/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/miche/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/miche/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/miche/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/miche/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/
+miche/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
+:/Users/miche/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
+7.pfb><C:/Users/miche/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr5.pfb><C:/Users/miche/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr7.pfb><C:/Users/miche/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb><C:/Users/miche/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/miche/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/miche/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on C:/Workarea\PE_Lab\out\main.pdf (21 pages, 4386161 bytes).
+PDF statistics:
+ 593 PDF objects out of 1000 (max. 8388607)
+ 279 named destinations out of 1000 (max. 500000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
+
