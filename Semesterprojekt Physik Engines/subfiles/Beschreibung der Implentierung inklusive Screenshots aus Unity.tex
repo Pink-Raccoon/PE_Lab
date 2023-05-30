@@ -67,12 +67,12 @@
     Für die Federauslenkung wird 1.7 gewählt, da die Feder eine Länge von 2 hat und vorher gestoppt werden muss bevor Romeo auf die Wand auftrifft.
     In der Start Methode wird aus den gegebenen Werten die Federkonstante berechnet.
 
-    \begin{lstinputlisting}[label={lst:graphInelastic}, firstline=49, lastline=50]
-    {\cubeControllerFiles}
+    \begin{lstinputlisting}[label={lst:graphInelastic}, firstline=82, lastline=83]
+    {\cubeControllerFile}
     \end{lstinputlisting}
     Es wird auch die Position ermittelt, welche Romeo zum ersten Mal besitzt, wenn er auf die Feder auftrifft (springMaxDeviation) wie in Abbildung \ref{fig:2Lab_SpringDeviation} rot markiert ist.
-    \begin{lstinputlisting}[label={lst:graphInelastic}, firstline=51, lastline=52]
-    {\cubeControllerFiles}
+    \begin{lstinputlisting}[label={lst:graphInelastic}, firstline=84, lastline=85]
+    {\cubeControllerFile}
     \end{lstinputlisting}
 
 
@@ -88,8 +88,41 @@
     In FixedUpdate gibt es zwei If-Bedingungen. Die erste ist zum Hinzufügen der konstanten Kraft mit der Methode .AddForce bis die Beschleunigunszeit vorüber ist.
     Die zweite If-Bedingung ist zur Überprüfung, ob Romeo die Feder berührt. Dafür muss die Position der rechten Kante von Romeo berechnet werden und mit der
     springMaxDeviation verglichen werden.
-    Für den inelastischen Stoss wird die Komponente FixedJoint in der Methode OnCollision implementiert. So bleiben Romeo und Julia  nach ihrer
+    Für den inelastischen Stoss wird die Komponente FixedJoint in der Methode OnCollision implementiert. So bleiben Romeo und Julia nach ihrer
     Kollision zusammen und gleiten gemeinsam in den Sonnenuntergang.
 
+    \subsection{Lab 3: Beide Würfel schwingen gedämpft}
+    Für die dritte Aufgabe sind neben dem CubeController.cs noch weitere Scripte dazugekommen. Diese sind:
+    \begin {itemize}
+        \item LineCrontroller.cs
+        \item LineJulia.cs
+        \item SwingJulia.cs
+        \item SwingRomeo.cs
+    \end{itemize}
+    Zur Kontrolle der Werte und Grafik Erstellung werden zwei verschiedene CSV Dateien erstellt,
+    eine für den Schwung von Julia und eine für den Schwung von Romeo.
+    Der gesamte Labaufbau in Unity ist in der \ref{fig:3Lab_ExperimentOverview} zur Laufzeit visuell dargestellt.
+    \newline
 
+    \begin{figure}[H]
+        \begin{center}
+            \centerline{\includegraphics[width=155mm]{./images/3Lab_Experiment_Overview}}
+            \caption{Experiment Übersicht}
+            \label{fig:3Lab_ExperimentOverview}
+        \end{center}
+    \end{figure}
+
+    Folgend sind die neuen wichtigen Eigenschaften des Lab relevanten Objekte in Unity aufgelistet:
+    \begin{itemize}
+        \item Seile:
+        Die Seile die in der Abbildung~\ref{fig:3Lab_ExperimentOverview} in Pink ersichtlich sind, werden von den Würfel
+        zu den vordefinierten Punkten wie in Abbildung~\ref{fig:3Lab_Robes} ersichtlich sind, gezeichnet.
+        \begin{figure}[H]
+            \begin{center}
+                \centerline{\includegraphics[width=100mm]{./images/3Lab_Robes}}
+                \caption{Experiment Übersicht}
+                \label{fig:3Lab_Robes}
+            \end{center}
+        \end{figure}
+    \end{itemize}
 \end{document}

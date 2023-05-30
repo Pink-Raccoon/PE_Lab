@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657803, g: 0.49641478, b: 0.5748152, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657737, g: 0.496414, b: 0.57481414, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -699,14 +699,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.13708787, y: -0.034223396, z: -0.012392507, w: -0.9898899}
-  m_LocalPosition: {x: -21.23, y: 2.89, z: -25.2}
+  m_LocalRotation: {x: -0, y: 0.19185562, z: -0, w: 0.98142314}
+  m_LocalPosition: {x: -20.78, y: 3.88, z: -13.51}
   m_LocalScale: {x: 0.9304776, y: 0.9304776, z: 0.9304776}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -15.798, y: 363.835, z: 0.902}
+  m_LocalEulerAnglesHint: {x: 0, y: 22.122, z: 0}
 --- !u!1 &1101248651
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,7 +733,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101248651}
-  m_Text: Lab2
+  m_Text: Lab3
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
